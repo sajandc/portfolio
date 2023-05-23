@@ -1,6 +1,6 @@
 :root {
   --primary-color: #0099B3;
-  --background-color: #fff;
+  --background-color: #f1f1f1;
   --text-color: #3c424e;
   --button-text-color: #fff;
   --font-family: "Poppins";
@@ -19,12 +19,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
   height: 100vh;
   background: var(--background-color);
+
 }
 
 // flex CSS
 
 .d-flex {
   display: flex;
+  align-items: center;
 }
 
 .d-flex-space-btwn {
@@ -47,50 +49,93 @@ body {
 // Generic CSS ends here
 
 .header {
-  margin: 10px;
-}
+  background-color: #ffffff99;
+  padding: 10px;
+  box-shadow: 0px 2px 6px 0px #767676;
+  // margin: 10px;
 
-.header-options {
-  >div {
-    padding: 0px 10px;
-    cursor: pointer;
-    transition: all ease-in 0.1s;
+  .logo-cont {
+    display: flex;
+    border: 2px solid;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    border-right: unset;
+    .logo {
+      mix-blend-mode: color-burn;
+      width: 80px;
+      padding: 4.5px;
+    }
+  
+    .name {
+      font-size: 28px;
+      height: 100%;
+      margin-left: 4px;
+      padding-left: 10px;
+      border-left: 4px solid darkred;
+      font-weight: 800;
+      display: flex;
+      align-items: flex-end;
+    }
+  }
 
-    &:hover {
-      font-weight: 600;
+  
+  .header-options {
+    >li {
+      list-style: none;
+      font-size: 18px;
+      padding: 0px 10px;
+      cursor: pointer;
+      transition: all ease-in-out 0.1s;
+
+      &:hover {
+        transform: scale(1.2);
+        font-weight: 500;
+      }
     }
   }
 }
 
+
 .container {
   display: flex;
   flex-direction: column;
-  // width: 70%;
+  background-image: url('./assets/bg5.jpg');
   margin: auto;
   height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 //
 
 
 .main {
-    height: 100vh;
-    background: radial-gradient(circle, lemonchiffon, black 25%, skyblue);
+  height: 100vh;
+  background: radial-gradient(circle, lemonchiffon, black 25%, skyblue);
 
 }
 
 main:after {
-    content: '';
-    position: absolute;
-    top: 0; right: 0; left: 0; bottom: 0;
-    background: radial-gradient(circle, transparent, black 25%, transparent);
-    animation: color 1.5s infinite ease-out alternate;
-    opacity: 0;
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: radial-gradient(circle, transparent, black 25%, transparent);
+  animation: color 1.5s infinite ease-out alternate;
+  opacity: 0;
 }
 
 @keyframes color {
-    0% {  background: radial-gradient(circle, transparent, black 25%, transparent); }
-    100% { opacity: 1; }
+  0% {
+    background: radial-gradient(circle, transparent, black 25%, transparent);
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 //
@@ -105,11 +150,13 @@ main:after {
 
   >section:first-child {
     width: 65%;
+
     img {
       width: 100%;
       height: 500px;
       border-radius: 24px;
       transition: all ease-in-out 0.5s;
+
       &:hover {
         filter: blur(3px);
       }
@@ -119,13 +166,15 @@ main:after {
   >section:last-child {
     width: 35%;
     overflow: hidden;
+
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       transition: all ease-in-out 0.5s;
+
       &:hover {
-       transform: scale(1.2);
+        transform: scale(1.2);
       }
     }
   }
