@@ -5,9 +5,9 @@ import Main from "./Component/Main"
 function App() {
   return (
     <div className="container">
-      {/* <Header /> */}
-      <Main/>
+       <Header />
       <Home/>
+      {/* <Main/> */}
     </div>
   );
 }
