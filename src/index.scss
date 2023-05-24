@@ -24,6 +24,15 @@ body {
 
 }
 
+// mixins
+
+@mixin background-img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
 // flex CSS
 
 .d-flex {
@@ -94,6 +103,15 @@ body {
       padding: 0px 10px;
       cursor: pointer;
       transition: all ease-in-out 0.1s;
+
+      a {
+        color: inherit;
+        text-decoration: none;
+        &.active {
+          color:  var(--text-color-dark);
+          font-weight: 600;
+        }
+      }
 
       &:hover {
         transform: scale(1.15);
@@ -190,12 +208,11 @@ body {
     width: 100vw;
     overflow: scroll;
     height: 1080px;
-    background-image: url('./assets/newbg.jpg');
+    background-image: url('./assets/home-bg.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
-
 }
 
 //
@@ -367,4 +384,19 @@ body {
     filter: blur(0px);
     opacity: 1;
   }
+}
+
+
+// Contact CSS
+
+.contact {
+  background: url('./assets/contact-bg.jpg');
+  @include background-img();
+}
+
+// Blog CSS
+
+.blog {
+  background: url('./assets/blog-bg.jpg');
+  @include background-img();
 }

@@ -1,16 +1,17 @@
 import React from "react";
-import App from "./App";
+import Root from "./Component/Root";
+import Blogs from "./Component/Blogs";
+import Contacts from "./Component/Contact";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-export function Router() {
+export default function Router() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<App />}>
-          <Route path="blogs" element={<div>Blogs coming soon</div>} />
-          <Route path="contact" element={<div>Contact coming soon</div>} />
-          <Route path="*" element={<div>No Page coming soon</div>} />
-        </Route>
+        <Route path="/" element={<Root />} />
+        <Route path="blogs" element={<Blogs />} />
+        <Route path="contact" element={<Contacts />} />
+        <Route path="*" element={<div>No Page coming soon</div>} />
       </Routes>
     </BrowserRouter>
   );
