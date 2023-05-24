@@ -1,12 +1,12 @@
-import logo from "../../assets/ultraLogo.png";
+import logo from "../../assets/logo.png";
 
 function Header() {
   return (
     <header className="d-flex-space-btwn header">
-      <div className="fw-600 logo-cont">
+      <a href="/" className="fw-600 logo-cont">
         <img className="logo" src={logo} />
         <div className="name">SAJAN CHOUHAN</div>
-      </div>
+      </a>
       <ul className="d-flex header-options">
         <li>Home</li>
         <li>About</li>
