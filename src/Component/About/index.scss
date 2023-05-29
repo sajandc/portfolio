@@ -1,0 +1,131 @@
+.about-me {
+    position: absolute;
+    top: 0;
+    padding-top: 160px;
+    color: #ffff;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    overflow: auto;
+    background-image: repeating-linear-gradient(150deg, #141414 50%, #212121 60%, #040101 60%);
+
+    .title {
+        padding: 20px 100px;
+        font-size: 6rem;
+        font-weight: 800;
+    }
+
+    .description-box {
+        display: flex;
+        padding: 20px 100px;
+
+        .description-img {
+            width: 55vw;
+            margin-right: 40px;
+
+            img {
+                width: inherit;
+                height: 400px;
+                border-radius: 20px;
+                box-shadow: 0px 0px 6px 2px #535252;
+            }
+        }
+
+        .description {
+            font-size: 2rem;
+            font-weight: 500;
+            width: 45vw;
+            color: #b9b7b7;
+            box-sizing: border-box;
+        }
+    }
+
+    .work-ex {
+        margin: 60px 100px;
+        border: 1px solid #666666;
+        padding: 40px 80px;
+        border-radius: 30px;
+        background-image: radial-gradient(circle, #18272c, #181818, #1d1c1c);
+        transition: all ease-in 0.3s;
+
+        &:hover {
+            box-shadow: inset 0px 0px 8px 4px #666666;
+        }
+
+        ul {
+            margin: 0px;
+            padding: 0px;
+            line-height: 3;
+
+            li {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                list-style: none;
+                padding: 0;
+                font-size: 2.5rem;
+                font-weight: 600;
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid #b9b7b7;
+                }
+
+                .light {
+                    font-size: 1.6rem;
+                    color: #939393;
+                }
+            }
+        }
+    }
+
+    .lets-talk {
+        background-color: #151515;
+        padding: 80px 0px;
+
+        .talk-title {
+            text-align: center;
+            font-size: 3.5rem;
+            margin: unset;
+        }
+
+        .mail-id {
+            margin: 40px 0px 60px;
+            text-align: center;
+
+            a {
+                text-decoration: none;
+                color: inherit;
+                font-size: 6rem;
+            }
+        }
+    }
+
+    hr {
+        border: 1px solid rgb(58, 58, 58);
+    }
+
+    .social-media {
+        margin-top: 60px;
+        .list {
+            font-size: 1.5rem;
+            line-height: 2;
+            cursor: pointer;
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+
+            li {
+                display: inline-flex;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

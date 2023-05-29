@@ -1,46 +1,43 @@
-import React, { useState, useEffect } from "react";
-import logo from "../../assets/logo.png";
-import { Link, useLocation } from "react-router-dom";
-
-function Header() {
-  const [activeRoute, setActiveRoute] = useState("/");
-  let location = useLocation();
-
-  useEffect(() => {
-    setActiveRoute(location.pathname);
-  }, [location.pathname]);
-
+import React, { useState } from "react";
+import "./index.scss";
+import logo from "../../assets/logo.svg";
+export default function NewHeader({ className }) {
+  const [menu, openMenu] = useState(false);
   return (
-    <header className="d-flex-space-btwn header">
-      <a href="/" className="fw-600 logo-cont">
-        <img className="logo" src={logo} />
-        <div className="name">SAJAN CHOUHAN</div>
-      </a>
-      <ul className="d-flex header-options">
-        <li>
-          <Link className={location.pathname === "/" ? "active" : ""} to="/">
-            Home
-          </Link>
-        </li>
-        <li>
-          <Link
-            className={location.pathname === "/blogs" ? "active" : ""}
-            to="/blogs"
-          >
-            Blogs
-          </Link>
-        </li>
-        <li>
-          <Link
-            className={location.pathname === "/contact" ? "active" : ""}
-            to="/contact"
-          >
-            Contact
-          </Link>
-        </li>
-      </ul>
-    </header>
+    <>
+      <div className={`new-header ${className}`}>
+        <a href="/" className="name">
+          <img src={logo} />
+          SAJAN D CHOUHAN
+        </a>
+        <div onClick={() => openMenu(true)} className="menu">
+          <span> Menu</span>
+          <span class="material-symbols-outlined">view_cozy</span>
+        </div>
+      </div>
+      <div className={`menu-option ${menu ? "open" : "close"}`}>
+        <ul>
+          <li>
+            <a href="/">Home </a>
+          </li>
+          <li>
+            <a href="/about">About </a>
+          </li>
+          <li>
+            <a href="/blogs">Blogs </a>
+          </li>
+          <li>
+            <a href="/contact">Contact </a>
+          </li>
+        </ul>
+
+        <span
+          onClick={() => openMenu(false)}
+          className="material-symbols-outlined"
+        >
+          close
+        </span>
+      </div>
+    </>
   );
 }
-
-export default Header;

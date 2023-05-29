@@ -1,0 +1,107 @@
+.new-header {
+    position: sticky;
+    top: 0;
+    // background-color: #0c0c0c;
+    color: #ffff;
+    z-index: 1;
+    font-size: 40px;
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    box-sizing: border-box;
+
+    a {
+        text-decoration: unset;
+        color: inherit;
+    }
+
+    .name {
+        display: flex;
+        align-items: center;
+
+        img {
+            height: 60px;
+            margin-right: 20px;
+            filter: invert(1);
+        }
+
+        font-size: 40px;
+        font-weight: 600;
+    }
+
+    .menu {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        font-size: 30px;
+        color: #8d8d8d;
+        line-height: 1;
+
+        >span:first-child {
+            margin-right: 6px;
+        }
+
+        &:hover {
+            color: #ffff;
+
+            .material-symbols-outlined {
+                transform: rotate(90deg);
+            }
+        }
+
+    }
+
+}
+
+.menu-option {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    z-index: 2;
+    color: #fff;
+    background-color: #161616fa;
+    box-sizing: border-box;
+    top: 0;
+    padding: 80px 100px 120px;
+    font-size: 2rem;
+    transition: all ease-in-out 0.2s;
+
+    ul {
+        margin: unset;
+        line-height: 1.5;
+
+        li {
+            list-style: none;
+            position: relative;
+            color: #8d8d8d;
+            transition: all ease-in 0.1s;
+
+            a {
+                text-decoration: unset;
+                color: inherit;
+            }
+
+            &:hover {
+                color: #ffff;
+
+                &::before {
+                    position: absolute;
+                    left: -110px;
+                    content: "Profile /";
+                }
+            }
+        }
+    }
+
+    &.open {
+        top: 0;
+        box-shadow: 0px 3px 9px 0px #232323;
+    }
+
+    &.close {
+        top: -400px;
+    }
+}

@@ -1,0 +1,46 @@
+.marquees-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    height: 70vh;
+}
+
+.marquee {
+    --gap: 1rem;
+    margin-block: 10px;
+    display: flex;
+}
+
+.marquee__content {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(-100% - var(--gap)));
+    }
+}
+
+/* styling design*/
+.marquee__content li {
+    list-style: none;
+    line-height: normal;
+    text-transform: uppercase;
+    font-family: "Oswald", sans-serif;
+    font-size: 240px;
+    padding: 0;
+    &.light {
+        color: #161618;
+    }
+}
+
+.marquee-1 .scroll {
+    animation: scroll 16s linear infinite;
+}

@@ -1,0 +1,30 @@
+.service {
+    background-image: repeating-linear-gradient(150deg, #141414 10%, #212121 30%, #040101 60%);
+    padding: 100px 120px;
+    .title {
+        font-size: 2.3rem;
+        font-weight: 500;
+    }
+    .items {
+        padding: 0px;
+        
+        li {
+            transition:  all ease-in 0.2s;
+            // background-image: repeating-linear-gradient(150deg, #141414, #212121 10%, #040101 20%);
+            &:hover {
+                background: #2d2c2ca6;
+                transform: scale(1.05);
+            }
+            
+            display: inline-flex;
+            margin: 20px;
+            padding: 40px;
+            font-size: 2.5rem;
+            font-weight: 800;
+            border: 1px solid #5d5d5d;
+            border-radius: 30px;
+            width: fit-content;
+            list-style: none;
+        }
+    }
+}
