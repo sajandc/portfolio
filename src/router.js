@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "./Component/Header";
 import Home from "./Component/Home";
 import Blogs from "./Component/Blogs";
 import About from "./Component/About";
@@ -13,9 +12,9 @@ export default function Router() {
     <Loader/>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="about" element={<About />} />
-        <Route path="blogs" element={<Blogs />} />
-        <Route path="contact" element={<Contact />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/blogs" element={<Blogs />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<div>No Page coming soon</div>} />
       </Routes>
     </BrowserRouter>
