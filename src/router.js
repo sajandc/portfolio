@@ -5,10 +5,12 @@ import Blogs from "./Component/Blogs";
 import About from "./Component/About";
 import Contact from "./Component/Contact";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Loader from "./Component/Loader";
 
 export default function Router() {
   return (
     <BrowserRouter>
+    <Loader/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
