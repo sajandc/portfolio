@@ -1,8 +1,15 @@
 import React, { useState } from "react";
 import "./index.scss";
 import logo from "../../assets/logo.svg";
+import { useNavigate } from "react-router-dom";
 export default function NewHeader({ className }) {
   const [menu, openMenu] = useState(false);
+  const navigate = useNavigate();
+
+  const clickMenu = (event) => {
+    const { id } = event.target;
+    navigate(id);
+  };
   return (
     <>
       <div className={`new-header ${className}`}>
@@ -16,19 +23,11 @@ export default function NewHeader({ className }) {
         </div>
       </div>
       <div className={`menu-option ${menu ? "open" : "close"}`}>
-        <ul>
-          <li>
-            <a href="/">Home </a>
-          </li>
-          <li>
-            <a href="about">About </a>
-          </li>
-          <li>
-            <a href="blogs">Blogs </a>
-          </li>
-          <li>
-            <a href="contact">Contact </a>
-          </li>
+        <ul onClick={clickMenu}>
+          <li id="/">Home</li>
+          <li id="/about">About</li>
+          <li id="/blogs">Blogs</li>
+          <li id="/contact">Contact</li>
         </ul>
 
         <span
