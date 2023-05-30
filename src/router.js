@@ -33,7 +33,11 @@ export default function Router() {
   ]);
 
   return (
-    <RouterProvider router={router} />
+    <>
+      <Loader />
+      <RouterProvider router={router} />
+    </>
+
     // <BrowserRouter>
     // <Loader/>
     //   <Routes>
