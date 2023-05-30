@@ -1,12 +1,12 @@
 import "./index.scss";
-import Heading from "../Heading";
+import Marquee from "../../CustomComponent/Marquee";
 import Header from "../Header";
 export default function Contact() {
   return (
     <>
       <Header />
       <div className="contact">
-        <Heading
+        <Marquee
           className="contact-heading"
           name="SAY HELLO, DON'T BE A STANGER"
           title="CONTACT ME"

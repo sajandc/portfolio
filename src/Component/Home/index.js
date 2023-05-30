@@ -1,16 +1,16 @@
 import "./index.scss";
-import Heading from "../Heading";
+import Marquee from "../../CustomComponent/Marquee";
 import AboutMe from "./AboutMe";
 import Service from "./Service";
 import Projects from "./Project";
-import Header from "../Header";
+import Heading from "../Header";
 
 export default function NewHome() {
   return (
     <>
-      <Header className="header"/>
+      <Heading className="header" />
       <div className="new-home">
-        <Heading name="SAJAN D CHOUHAN" title="FRONTEND DEVELOPER" />
+        <Marquee name="SAJAN D CHOUHAN" title="FRONTEND DEVELOPER" />
         <AboutMe />
         <Service />
         <Projects />

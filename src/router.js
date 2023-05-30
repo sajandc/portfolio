@@ -3,6 +3,7 @@ import Home from "./Component/Home";
 import Blogs from "./Component/Blogs";
 import About from "./Component/About";
 import Contact from "./Component/Contact";
+import Projects from "./Component/Projects"
 import {
   BrowserRouter,
   Routes,
@@ -25,6 +26,10 @@ export default function Router() {
     {
       path: "blogs",
       element: <Blogs />,
+    },
+    {
+      path: "projects",
+      element: <Projects />,
     },
     {
       path: "contact",

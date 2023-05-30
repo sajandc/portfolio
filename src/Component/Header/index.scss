@@ -20,22 +20,20 @@
     .name {
         display: flex;
         align-items: center;
-
+        font-size: 2rem;
+        font-weight: 600;
         img {
-            height: 60px;
+            height: 46px;
             margin-right: 20px;
             filter: invert(1);
         }
-
-        font-size: 40px;
-        font-weight: 600;
     }
 
     .menu {
         display: flex;
         align-items: center;
         cursor: pointer;
-        font-size: 30px;
+        font-size: 1.5rem;
         color: #8d8d8d;
         line-height: 1;
 
@@ -65,7 +63,7 @@
     background-color: #161616fa;
     box-sizing: border-box;
     top: 0;
-    padding: 80px 100px 120px;
+    padding: 52px 100px 70px;
     font-size: 2rem;
     transition: all ease-in-out 0.2s;
 
@@ -78,6 +76,7 @@
             position: relative;
             color: #8d8d8d;
             transition: all ease-in 0.1s;
+            cursor: pointer;
 
             &:hover {
                 color: #ffff;

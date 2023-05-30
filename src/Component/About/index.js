@@ -1,5 +1,9 @@
 import "./index.scss";
 import Header from "../Header";
+import WorkEx from "./WorkEx";
+import LetsTalk from "./LetsTalk";
+import WorkProcess from "./WorkProcess";
+import Marquee from "../../CustomComponent/Marquee";
 import path from "../../assets/code.jpg";
 export default function About() {
   return (
@@ -18,76 +22,18 @@ export default function About() {
             business goals.
           </div>
         </div>
-        <div className="work-ex">
-          <h1>Work Experience </h1>
-          <ul>
-            <li>
-              <div>
-                {" "}
-                Senior Software Engineer{" "}
-                <span className="light">@Happay (CRED)</span>{" "}
-              </div>
-              <div className="light">April-2021 - Present</div>
-            </li>
-            <li>
-              <div>
-                Frontend Developer <span className="light">@Happay</span>
-              </div>
-              <div className="light">Jan-2020 - Mar-2021</div>
-            </li>
-            <li>
-              <div>
-                Intern <span className="light">@Happay</span>
-              </div>
-              <div className="light">Aug-2018 - Dec-2019</div>
-            </li>
-          </ul>
-        </div>
-        <div className="lets-talk">
-          <h1 className="talk-title">Let's talk about your project</h1>
-          <h1 className="mail-id">
-            <a href="mailto:sajan.d.chouhan@gmail.com">hi@sajan.co.in</a>
-          </h1>
-          <hr />
-          <div className="social-media">
-            <ul className="list">
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/sajandchouhan/"
-                  target="_blank"
-                >
-                  LinkendIn
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/sajandc" target="_blank">
-                  Github
-                </a>
-              </li>
-              <li>
-                <a href="https://twitter.com/iam_SajanDC" target="_blank">
-                  Twitter
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.instagram.com/sajan.d.chouhan/"
-                  target="_blank"
-                >
-                  Instagram
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.youtube.com/channel/UC9l0BBYYB0BxMOta-e5q60g"
-                  target="_blank"
-                >
-                  Youtube
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
+        <Marquee
+          className="about-me-heading"
+          name={
+            <div>
+              ReactJS &#183; JAVASCRIPT &#183; TYPESCRIPT &#183; HTML &#183; CSS {" "}
+            </div>
+          }
+          title="TECH STACK"
+        />
+        <WorkProcess />
+        <WorkEx />
+        <LetsTalk />
       </div>
     </>
   );

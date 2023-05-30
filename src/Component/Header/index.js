@@ -27,6 +27,7 @@ export default function NewHeader({ className }) {
           <li id="/">Home</li>
           <li id="/about">About</li>
           <li id="/blogs">Blogs</li>
+          <li id="/projects">Projects</li>
           <li id="/contact">Contact</li>
         </ul>
 
