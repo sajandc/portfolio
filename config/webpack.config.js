@@ -563,8 +563,11 @@ module.exports = function (webpackEnv) {
       ].filter(Boolean),
     },
     devServer: {
+      historyApiFallback: true,
+      contentBase: './',
+      hot: true,
       allowedHosts: 'all',
-    },
+   },
     plugins: [
       // Generates an `index.html` file with the <script> injected.
       new HtmlWebpackPlugin(
