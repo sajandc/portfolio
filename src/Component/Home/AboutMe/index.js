@@ -22,7 +22,7 @@ export default function AboutMe() {
             together
             <button onClick={onClick} className="button">
               <span>Let's talk </span>
-              <span class="material-symbols-outlined">arrow_forward</span>
+              <span className="material-symbols-outlined">arrow_forward</span>
             </button>
           </div>
         </div>
