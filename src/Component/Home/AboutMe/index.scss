@@ -1,6 +1,6 @@
 .short-about-me {
-    margin: 30px;
-    padding: 100px;
+    margin: 2vw;
+    padding: 4vw;
     box-shadow: 0px 0px 8px -3px #ffff;
     border-radius: 20px;
     // background-color: #181818;
@@ -13,21 +13,21 @@
         margin-right: 30px;
 
         .name {
-            font-size: 6rem;
+            font-size: 6vw;
             font-weight: 800;
         }
 
         .description {
-            margin-top: 40px;
-            font-size: 2rem;
+            margin-top: 5vw;
+            font-size: 3vw;
             line-height: 1.5;
             width: 85%;
         }
 
         .work-together {
             font-family: sans-serif;
-            margin-top: 50px;
-            font-size: 5rem;
+            margin-top: 5vw;
+            font-size: 5vw;
             line-height: 0.8;
             font-weight: 600;
 
@@ -51,7 +51,7 @@
                 border-radius: 30px;
                 width: 300px;
                 font-weight: 600;
-                font-size: 1.3rem;
+                font-size: 1.3vw;
                 margin-top: 10px;
                 transition: all ease-in 0.2s;
                 border: 2px solid;
@@ -70,12 +70,12 @@
 
     .social-media {
         width: 20%;
-        font-size: 2.2rem;
+        font-size: 2.2vw;
         font-weight: 600;
 
         .list {
             list-style: devanagari;
-            font-size: 1.5rem;
+            font-size: 1.5vw;
             line-height: 2;
             cursor: pointer;
 
@@ -89,6 +89,37 @@
                     text-decoration: underline;
                 }
             }
+        }
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .short-about-me {
+        flex-direction: column;
+    }
+
+    .content {
+        width: 100% !important;
+        margin-right: 0px !important;
+    }
+
+    .work-together {
+        margin-bottom: 5vw;
+
+        button {
+            padding: 0px 10px !important;
+            font-size: 2vw !important;
+            width: 200px !important;
+            margin-top: 0px !important;
+        }
+    }
+
+    .social-media {
+        width: 100% !important;
+        font-size: 4vw !important;
+
+        .list {
+            font-size: 3vw !important;
         }
     }
 }

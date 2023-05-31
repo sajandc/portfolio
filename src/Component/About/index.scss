@@ -1,7 +1,7 @@
 .about-me {
     position: absolute;
     top: 0;
-    padding-top: 160px;
+    padding-top: 12vw;
     color: #ffff;
     height: 100vh;
     width: 100vw;
@@ -10,14 +10,14 @@
     background-image: repeating-linear-gradient(150deg, #141414 50%, #212121 60%, #040101 60%);
 
     .title {
-        padding: 20px 100px;
-        font-size: 6rem;
+        padding: 2vw 10vw;
+        font-size: 6vw;
         font-weight: 800;
     }
 
     .description-box {
         display: flex;
-        padding: 20px 100px;
+        padding: 2vw 6vw;
 
         .description-img {
             width: 55vw;
@@ -32,7 +32,7 @@
         }
 
         .description {
-            font-size: 2rem;
+            font-size: 2.3vw;
             font-weight: 500;
             width: 45vw;
             color: #b9b7b7;
@@ -41,10 +41,10 @@
     }
 
     .work-ex {
-        margin: 60px 100px;
+        margin: 4vw 8vw;
         border: 1px solid #666666;
-        padding: 40px 80px;
-        border-radius: 30px;
+        padding: 2vw 4vw;
+        border-radius: 3vw;
         background-image: radial-gradient(circle, #18272c, #181818, #1d1c1c);
         transition: all ease-in 0.3s;
 
@@ -63,7 +63,7 @@
                 align-items: center;
                 list-style: none;
                 padding: 0;
-                font-size: 2.5rem;
+                font-size: 2.5vw;
                 font-weight: 600;
 
                 &:not(:last-child) {
@@ -71,7 +71,7 @@
                 }
 
                 .light {
-                    font-size: 1.6rem;
+                    font-size: 1.6vw;
                     color: #939393;
                 }
             }
@@ -80,18 +80,19 @@
 
     .lets-talk {
         background-color: #151515;
-        padding: 80px 0px;
+        padding: 8vw 0px;
 
         .talk-title {
             text-align: center;
-            font-size: 3.5rem;
+            font-size: 4vw;
             margin: unset;
         }
 
         .mail-id {
-            margin: 40px 0px 60px;
+            margin: 4vw 0px 8vw;
             text-align: center;
             transition: all ease-in-out 0.3s;
+
             &:hover {
                 transform: scale(1.05);
             }
@@ -99,7 +100,7 @@
             a {
                 text-decoration: none;
                 color: inherit;
-                font-size: 6rem;
+                font-size: 8vw;
             }
         }
     }
@@ -109,9 +110,11 @@
     }
 
     .social-media {
-        margin-top: 60px;
+        margin-top: 8vw;
+
         .list {
             font-size: 1.5rem;
+            padding: 0;
             line-height: 2;
             cursor: pointer;
             list-style-type: none;
@@ -135,20 +138,57 @@
 
     .work-process {
         margin-top: 40px;
-        padding: 60px 60px 80px;
+        padding: 6vw 6vw 8vw;
         background: radial-gradient(circle at 100%, #333, #333 50%, #666363 75%, #333 75%);
     }
+
     .about-me-heading {
         height: unset;
         margin-top: 30px;
         background: #000000;
         border-top: 6px solid;
         border-bottom: 6px solid;
+
         .marquee__content li {
             font-size: 3rem;
+
             &.light {
                 color: #333;
             }
         }
     }
+}
+
+
+@media only screen and (max-width: 700px) {
+    .description-box {
+        flex-direction: column;
+
+        .description-img {
+            >img {
+                height: 200px !important;
+            }
+
+            width: 100% !important;
+            margin-right: unset !important;
+        }
+
+        .description {
+            margin-top: 20px !important;
+            font-size: 6vw !important;
+            width: 100% !important;
+        }
+    }
+    .work-ex {
+        h1 {
+            font-size: 4vw;
+        }
+        li {
+
+        }
+    }
+}
+
+.shadow {
+    background: linear-gradient(90deg, #212121e3 0%, #0d0b0bb5 50%, #0c0404ab 100%);
 }

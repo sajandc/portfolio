@@ -1,10 +1,8 @@
 .new-header {
     position: sticky;
     top: 0;
-    // background-color: #0c0c0c;
     color: #ffff;
     z-index: 1;
-    font-size: 40px;
     display: flex;
     width: 100vw;
     align-items: center;
@@ -20,8 +18,9 @@
     .name {
         display: flex;
         align-items: center;
-        font-size: 2rem;
+        font-size: 2vw;
         font-weight: 600;
+
         img {
             height: 46px;
             margin-right: 20px;
@@ -33,7 +32,7 @@
         display: flex;
         align-items: center;
         cursor: pointer;
-        font-size: 1.5rem;
+        font-size: 2vw;
         color: #8d8d8d;
         line-height: 1;
 
@@ -64,7 +63,7 @@
     box-sizing: border-box;
     top: 0;
     padding: 52px 100px 70px;
-    font-size: 2rem;
+    font-size: 2vw;
     transition: all ease-in-out 0.2s;
 
     ul {
@@ -97,5 +96,34 @@
 
     &.close {
         top: -400px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .new-header {
+        padding: 10px;
+
+        .name img {
+            height: 25px;
+        }
+
+        .menu {
+            .material-symbols-outlined {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .menu-option {
+        font-size: 3vw;
+
+        &.open {
+            padding: 20px;
+        }
+
+        .material-symbols-outlined {
+            font-size: 12px;
+            height: 10px;
+        }
     }
 }

@@ -8,7 +8,7 @@ import path from "../../assets/code.jpg";
 export default function About() {
   return (
     <>
-      <Header />
+      <Header className="shadow"/>
       <div className="about-me">
         <div className="title">I'm SAJAN and I love clean interfaces.</div>
         <div className="description-box">

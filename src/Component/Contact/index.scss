@@ -7,30 +7,38 @@
     position: absolute;
     width: 100vw;
     top: 0;
-    padding: 160px 120px 80px 0px;
+    padding: 10vw 6vw 4vw 0px;
+
     .contact-heading {
         position: absolute;
         height: unset;
+
         .marquee__content {
             margin-top: 20px;
             margin-bottom: 20px;
+
             li {
-                font-size: 10rem;
+                font-size: 10vw;
+
                 &.light {
                     color: #7c7878;
                 }
             }
         }
     }
+
     .description {
-        padding-left: 120px;
+        padding-left: 12vw;
     }
-    .contact-form{
+
+    .contact-form {
         width: 35%;
         padding: 20px;
         box-sizing: border-box;
         z-index: 1;
-        input, textarea {
+
+        input,
+        textarea {
             font-family: sans-serif;
             box-sizing: border-box;
             padding: 20px 40px;
@@ -43,6 +51,7 @@
             font-size: 2rem;
             color: #fff;
         }
+
         button {
             outline: none;
             border: 1px solid #ffff;
@@ -54,12 +63,41 @@
             cursor: pointer;
         }
     }
+
     .contact-text {
-        margin-top: 230px;
+        margin-top: 23vw;
         width: 65%;
-        font-size: 3rem;
+        font-size: 3vw;
+
         h2 {
             margin: unset;
         }
     }
+}
+
+
+@media only screen and (max-width: 700px) {
+    .contact {
+        flex-direction: column;
+        box-sizing: unset;
+        height: unset;
+
+        .contact-text {
+            width: 100%;
+
+            .description {
+                font-size: 8vw;
+            }
+        }
+
+        .contact-form {
+            width: 100%;
+        }
+    }
+
+    .marquee {
+        width: 100vw !important;
+        box-sizing: border-box !important;
+    }
+
 }

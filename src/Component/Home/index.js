@@ -13,7 +13,7 @@ export default function NewHome() {
         <Marquee name="SAJAN D CHOUHAN" title="FRONTEND DEVELOPER" />
         <AboutMe />
         <Service />
-        <Projects />
+        {/* <Projects /> */}
       </div>
     </>
   );

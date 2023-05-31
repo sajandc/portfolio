@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import './mobile.scss';
 import './index.scss';
 import Router from "./router"
 import reportWebVitals from './reportWebVitals';
