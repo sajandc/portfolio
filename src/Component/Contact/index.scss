@@ -1,12 +1,13 @@
 .contact {
     display: flex;
-    height: 100vh;
+    height: unset;
     box-sizing: border-box;
     background-image: radial-gradient(circle, #1e0d0d, #181818, #1d1c1c);
     color: #ffff;
-    position: absolute;
+    // position: absolute;
     width: 100vw;
-    top: 0;
+    // top: 0;
+    margin-top: -126px;
     padding: 10vw 6vw 4vw 0px;
 
     .contact-heading {
@@ -81,6 +82,7 @@
         flex-direction: column;
         padding-right: unset;
         overflow: scroll;
+        margin-top: -45px;
         // height: unset;
 
         .contact-text {
