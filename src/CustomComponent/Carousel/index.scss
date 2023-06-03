@@ -1,0 +1,109 @@
+.carousel {
+    display: flex;
+    align-items: center;
+    margin-top: 4vw;
+
+    .font-4 {
+        font-size: 4vw;
+    }
+
+    .hide {
+        visibility: hidden;
+    }
+
+    .carousel-data-container {
+
+        overflow: hidden;
+
+        .inner-container {
+            transition: all ease-in 0.3s;
+            display: flex;
+            width: fit-content;
+
+            .steps {
+                opacity: 0.3;
+                padding-right: 80px;
+                box-sizing: border-box;
+                width: 70vw;
+                counter-increment: section;
+                position: relative;
+
+                >div {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    border: 1px solid;
+                    border-radius: 10px;
+                    padding: 3vw;
+                    padding-left: 12vw;
+                    box-sizing: border-box;
+                    height: 100%;
+                    position: relative;
+                    background-color: #09141461;
+                    box-shadow: 0px 0px 10px -2px #b1b1b1;
+                    transition: all ease-in 0.4s;
+
+                    &:hover {
+                        background-color: #060d0da8;
+                    }
+                }
+
+                &.active {
+                    opacity: 1;
+                }
+
+                // &:not(.active) {
+                    &::before {
+                        position: absolute;
+                        color: #fff;
+                        font-size: 30vw;
+                        top: 50%;
+                        left: -4vw;
+                        transform: translateY(-50%);
+                        content: counter(section);
+                        z-index: 1;
+                    }
+                // }
+            }
+
+            .step-title {
+                font-size: 2vw;
+                margin-bottom: 20px;
+                display: flex;
+                align-items: center;
+                text-decoration: double;
+
+                .material-symbols-outlined {
+                    margin-right: 10px;
+                }
+            }
+
+            .step-description {
+                font-size: 1.5vw;
+                letter-spacing: 1.5px;
+                text-align: center;
+                line-height: 1.5;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 700px) {
+    .steps {
+        width: 70vw !important;
+        padding-right: 6vw !important;
+        .step-title {
+            font-size: 5vw !important;
+        }
+        .step-description {
+            font-size: 3vw !important;
+        }
+    }
+
+    .font-4 {
+        font-size: 10vw !important;
+    }
+
+}

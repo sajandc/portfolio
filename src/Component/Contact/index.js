@@ -8,7 +8,7 @@ export default function Contact() {
       <div className="contact">
         <Marquee
           className="contact-heading"
-          name="SAY HELLO, DON'T BE A STANGER"
+          name="SAY HELLO, DON'T BE A STRANGER"
           title="CONTACT ME"
         />
         <div className="contact-text">

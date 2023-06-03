@@ -79,8 +79,9 @@
 @media only screen and (max-width: 700px) {
     .contact {
         flex-direction: column;
-        box-sizing: unset;
-        height: unset;
+        padding-right: unset;
+        overflow: scroll;
+        // height: unset;
 
         .contact-text {
             width: 100%;
@@ -92,7 +93,12 @@
 
         .contact-form {
             width: 100%;
+            input,
+            textarea, button {
+                font-size: 5vw;
+            }
         }
+
     }
 
     .marquee {

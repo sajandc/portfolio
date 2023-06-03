@@ -2,14 +2,10 @@ import React, { useState } from "react";
 import "./index.scss";
 import logo from "../../assets/logo.svg";
 import { useNavigate } from "react-router-dom";
+import MenuOption from "./MenuOption";
 export default function NewHeader({ className }) {
-  const [menu, openMenu] = useState(false);
-  const navigate = useNavigate();
+  const [open, openMenu] = useState(false);
 
-  const clickMenu = (event) => {
-    const { id } = event.target;
-    navigate(id);
-  };
   return (
     <>
       <div className={`new-header ${className}`}>
@@ -22,22 +18,7 @@ export default function NewHeader({ className }) {
           <span class="material-symbols-outlined">view_cozy</span>
         </div>
       </div>
-      <div className={`menu-option ${menu ? "open" : "close"}`}>
-        <ul onClick={clickMenu}>
-          <li id="/">Home</li>
-          <li id="/about">About</li>
-          <li id="/blogs">Blogs</li>
-          <li id="/projects">Projects</li>
-          <li id="/contact">Contact</li>
-        </ul>
-
-        <span
-          onClick={() => openMenu(false)}
-          className="material-symbols-outlined"
-        >
-          close
-        </span>
-      </div>
+      <MenuOption open={open} onClose={() => openMenu(false)} />
     </>
   );
 }
