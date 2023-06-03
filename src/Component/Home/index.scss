@@ -1,6 +1,8 @@
 .new-home {
     background-color: #0c0c0c;
     color: #ffff;
+    overflow: scroll;
+    height: calc(100vh - 126px);
 }
 
 .header {
