@@ -1,8 +1,14 @@
+import "./index.scss";
+import Marquee from "../../CustomComponent/Marquee";
+import Heading from "../Header";
 
 export default function Blogs() {
   return (
-    <div className="blog">
-      Contact Coming soon
-    </div>
+    <>
+      <Heading className="header" />
+      <div className="blogs-container">
+        <Marquee name="BLOGS" title="COMING SOON" />
+      </div>
+    </>
   );
 }

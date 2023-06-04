@@ -1,6 +1,8 @@
 import "./index.scss";
 import Marquee from "../../CustomComponent/Marquee";
 import Header from "../Header";
+import Button from "../../CustomComponent/Button";
+import TextInput from "../../CustomComponent/TextInput";
 export default function Contact() {
   return (
     <>
@@ -18,10 +20,10 @@ export default function Contact() {
           </div>
         </div>
         <form className="contact-form">
-          <input required placeholder="Name" />
-          <input required placeholder="Email" />
-          <textarea placeholder="Message" />
-          <button>Submit</button>
+          <TextInput placeholder="Name" onChange={() => {}}/>
+          <TextInput placeholder="Email" onChange={() => {}}/>
+          <TextInput placeholder="Message" type="textarea" onChange={() => {}}/> 
+          <Button text="Submit" className="contact-btn"/>
         </form>
       </div>
     </>

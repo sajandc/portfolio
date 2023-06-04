@@ -5,6 +5,7 @@ import Service from "./Service";
 import Projects from "./Project";
 import Heading from "../Header";
 import ThreeD from "../../CustomComponent/3D";
+import Feedback from "../../CustomComponent/Feedback";
 
 export default function NewHome() {
   return (
@@ -15,6 +16,7 @@ export default function NewHome() {
         <Marquee name="SAJAN D CHOUHAN" title="FRONTEND DEVELOPER" />
         <AboutMe />
         <Service />
+        <Feedback/>
         {/* <Projects /> */}
       </div>
     </>

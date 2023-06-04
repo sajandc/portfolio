@@ -1,0 +1,13 @@
+.project-container {
+    height: 100vh;
+    background: #0E5874;
+    background: radial-gradient(at right top, #07222c, #31272b);
+    .marquee__content { 
+        li {
+            color: #b7afaf;
+            &.light {
+                color: #6e889a;
+            }
+        }
+    }
+}

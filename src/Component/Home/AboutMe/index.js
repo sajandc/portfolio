@@ -1,5 +1,6 @@
 import "./index.scss";
 import { useNavigate } from "react-router-dom";
+import Button from "../../../CustomComponent/Button";
 
 export default function AboutMe() {
   const navigate = useNavigate();
@@ -20,10 +21,12 @@ export default function AboutMe() {
           Let’s <div className="work">work</div>
           <div className="together">
             together
-            <button onClick={onClick} className="button">
-              <span>Let's talk </span>
-              <span className="material-symbols-outlined">arrow_forward</span>
-            </button>
+            <Button
+              className="lets-talk-btn"
+              onClick={onClick}
+              text="Let's talk"
+              icon="arrow_forward"
+            />
           </div>
         </div>
       </div>
