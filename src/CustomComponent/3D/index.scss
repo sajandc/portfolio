@@ -1,0 +1,11 @@
+.cavnas-cont {
+    height: 50vh;
+}
+
+
+@media only screen and (max-width: 700px) {
+    .cavnas-cont {
+        height: 40vh;
+    }
+
+}

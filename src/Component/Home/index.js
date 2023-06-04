@@ -4,12 +4,14 @@ import AboutMe from "./AboutMe";
 import Service from "./Service";
 import Projects from "./Project";
 import Heading from "../Header";
+import ThreeD from "../../CustomComponent/3D";
 
 export default function NewHome() {
   return (
     <>
       <Heading className="header" />
       <div className="new-home">
+        <ThreeD />
         <Marquee name="SAJAN D CHOUHAN" title="FRONTEND DEVELOPER" />
         <AboutMe />
         <Service />
