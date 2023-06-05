@@ -35,18 +35,6 @@
         }
 
     }
-
-    svg {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        box-sizing: border-box;
-        display: block;
-        background-color: #0e4166;
-        background-image: linear-gradient(to bottom, rgba(14, 65, 102, 0.86), #0e4166);
-    }
 }
 
 .grey {
@@ -55,4 +43,25 @@
 
 .text-align-end {
     text-align: end;
+}
+
+@media only screen and (max-width: 700px) {
+    .portfolio-info {
+        display: block;
+        .developer-info {
+            font-size: 3vw;
+            margin-bottom: 20px;
+            .material-symbols-outlined {
+                font-size: 20px;
+            }
+        }
+        .social-link {
+            .text-align-end {
+                text-align: start;
+            }
+        }
+    }
+    .developer-info, .social-link {
+        width: unset !important;
+    }
 }
