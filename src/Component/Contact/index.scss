@@ -96,6 +96,8 @@
 
         .contact-form {
             width: 100%;
+            margin-top: 20px;
+            border-radius: unset;
 
             input,
             textarea {
@@ -107,7 +109,6 @@
 
     .contact-btn {
         width: 100% !important;
-        padding: 20px 40px !important;
         margin-top: 10px !important;
     }
 

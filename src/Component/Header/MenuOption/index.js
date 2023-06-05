@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { createPortal } from "react-dom";
 import menuOptions from "../../../Constants/menuOption.json";
@@ -13,7 +13,7 @@ export default function MenuOption({ open, onClose }) {
   };
   return createPortal(
     <div className="menu-option-wrapper">
-      {open && <div className="backdrop"></div>}
+      {open && <div onClick={() => onClose(false)} className="backdrop"></div>}
       <div className={`menu-option ${open ? "open" : ""}`}>
         <ul onClick={clickMenu}>
           {menuOptions.map((el) => (

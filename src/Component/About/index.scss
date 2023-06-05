@@ -173,11 +173,20 @@
     }
 
     .work-ex {
+        margin: 4vw !important;
+        padding: 2vw !important;
+
         h1 {
             font-size: 4vw;
         }
 
-        li {}
+        li {
+            font-size: 3vw !important;
+
+            .light {
+                font-size: 2vw !important;
+            }
+        }
     }
 
     .work-process {

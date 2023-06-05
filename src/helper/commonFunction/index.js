@@ -48,6 +48,13 @@ export const onKeyPress = (event, callBack) => {
   }
 };
 
+export const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+
 export const validateEmail = (email) => {
   var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return emailRegex.test(email);

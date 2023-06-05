@@ -70,7 +70,7 @@ export default function Contact() {
               onChange={onChange}
               value={state.message}
             />
-            <Button type="submit" text="Submit" className="contact-btn" />
+            <Button type="submit" text="Submit" className="contact-btn" icon="send" />
           </form>
         ) : (
           <div className="contact-form success">

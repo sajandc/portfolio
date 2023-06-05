@@ -1,11 +1,15 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./index.scss";
 import logo from "../../assets/logo.svg";
-// import { useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import MenuOption from "./MenuOption";
-import { onKeyPress } from "../../helper/commonFunction";
+import { onKeyPress, scrollToTop } from "../../helper/commonFunction";
 export default function NewHeader({ className }) {
   const [open, openMenu] = useState(false);
+  const location = useLocation();
+  useEffect(() => {
+    scrollToTop();
+  }, [location.pathname]);
 
   const onKeyChange = (event) => {
     if (event.key === "Escape") {
