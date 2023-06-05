@@ -1,0 +1,58 @@
+.portfolio-info {
+    padding: 6vw 4vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-image: linear-gradient(to right top, #111010, #090708, #111010, #0e0b13, #111010, #0a0e18, #111010, #121118, #111010, #050a0b, #111010, #010f0e);
+
+    .developer-info {
+        display: flex;
+        align-items: center;
+        font-size: 1.5vw;
+        width: 50vw;
+
+        .name {
+            font-weight: 600;
+            color: #ffff;
+        }
+
+        .material-symbols-outlined {
+            margin: 0px 10px;
+        }
+    }
+
+    .social-link {
+        width: 40vw;
+
+        .list {
+            font-size: 1rem;
+            padding: 0;
+            line-height: 2;
+            cursor: pointer;
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+        }
+
+    }
+
+    svg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        display: block;
+        background-color: #0e4166;
+        background-image: linear-gradient(to bottom, rgba(14, 65, 102, 0.86), #0e4166);
+    }
+}
+
+.grey {
+    color: grey;
+}
+
+.text-align-end {
+    text-align: end;
+}

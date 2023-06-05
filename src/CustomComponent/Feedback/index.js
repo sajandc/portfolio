@@ -3,19 +3,34 @@ import Button from "../Button";
 import TextInput from "../TextInput";
 import Rating from "../Rating";
 import "./index.scss";
+import { callAPI, validateEmail } from "../../helper/commonFunction";
+import { FEEDBACK } from "../../Constants/url";
 export default function Feedback() {
-  const [message, setMessage] = useState("");
+  const [state, setState] = useState({ name: "", email: "", message: "" });
+  const [error, setError] = useState("")
   const [rating, setRating] = useState(8);
   const [success, setSuccess] = useState(false);
 
   const onSubmit = (event) => {
     event.preventDefault();
     event.stopPropagation();
-    setSuccess(true);
+    if (!validateEmail(state.email)) {
+      setError("Please Enter Valid Email Id");
+      return -1;
+    }
+    callAPI(
+      { message: state.message, rating, email: state.email, name: state.name },
+      FEEDBACK
+    ).then((res) => {
+      setSuccess(true);
+    });
   };
 
   const onChange = (event) => {
-    setMessage(event.target.value);
+    const {id, value} = event.target
+    state[id] = value;
+    setState({ ...state });
+    setError("");
   };
 
   return (
@@ -32,7 +47,22 @@ export default function Feedback() {
           />
           <TextInput
             onChange={onChange}
-            value={message}
+            value={state.name}
+            id="name"
+            required
+            placeholder="Name"
+          />
+          <TextInput
+            onChange={onChange}
+            value={state.email}
+            id="email"
+            required
+            placeholder="Email"
+          />
+          {error && <div className="red">{error}</div>}
+          <TextInput
+            onChange={onChange}
+            value={state.message}
             id="message"
             placeholder="Message"
             type="textarea"

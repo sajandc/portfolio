@@ -3,7 +3,8 @@
     align-items: center;
     justify-content: center;
     margin: auto;
-    background: linear-gradient(to left, #1d1313 0%, #101210 22%, #181616 51%, #1a1e1a 88%, #232828 100%);
+    background-image: repeating-linear-gradient(90deg, #2e3243 56%, #2a2b2b 30%, #050707 60%);
+    // background: linear-gradient(to left, #1d1313 0%, #101210 22%, #181616 51%, #1a1e1a 88%, #232828 100%);
 
     .title {
         font-size: 2vw;
@@ -28,6 +29,8 @@
 
     .inner-container {
         width: 50vw;
+        background-color: #2b2c2ee0;
+        box-sizing: border-box;
         padding: 30px 90px;
         margin: 60px 0px;
         border-radius: 20px;
@@ -61,6 +64,10 @@
             button {
                 width: 100% !important;
             }
+        }
+        .inner-container {
+            width: 90vw;
+            padding: 20px;
         }
     }
 }

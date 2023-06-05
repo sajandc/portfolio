@@ -48,24 +48,6 @@
         width: 20%;
         font-size: 2.2vw;
         font-weight: 600;
-
-        .list {
-            list-style: devanagari;
-            font-size: 1.5vw;
-            line-height: 2;
-            cursor: pointer;
-
-            a {
-                text-decoration: none;
-                color: inherit;
-            }
-
-            li {
-                &:hover {
-                    text-decoration: underline;
-                }
-            }
-        }
     }
     .lets-talk-btn {
         margin-left: 45px;
@@ -93,9 +75,5 @@
     .social-media {
         width: 100% !important;
         font-size: 4vw !important;
-
-        .list {
-            font-size: 3vw !important;
-        }
     }
 }

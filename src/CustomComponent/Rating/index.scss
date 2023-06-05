@@ -2,6 +2,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    >.material-symbols-outlined {
+        margin: 0px 20px;
+        font-size: 40px;
+    }
 }
 
 .range-slider {
@@ -60,6 +64,20 @@
     font-size: 4vmin;
     color: #303030;
     z-index: 2;
+    .material-symbols-outlined {
+        font-size: 40px;
+       
+    }
+}
+
+.green {
+    color: green;
+}
+.orange {
+    color: orange;
+}
+.red {
+    color: red;
 }
 
 .range-slider_line {
@@ -84,9 +102,18 @@
 
 
 @media only screen and (max-width: 700px) {
+    .container {
+        >.material-symbols-outlined {
+            margin: 0px 5px;
+            font-size: 20px;
+        }
+    }
     .range-slider_thumb {
         height: 20px;
         width: 20px;
+        .material-symbols-outlined {
+            font-size: 20px;
+        }
     }
 
     .range-slider {

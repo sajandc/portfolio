@@ -13,6 +13,7 @@
     .contact-heading {
         position: absolute;
         height: unset;
+        width: 100vw;
 
         .marquee__content {
             margin-top: 20px;
@@ -72,9 +73,7 @@
         border-radius: 10px;
         width: 100%;
         border: 1px solid #fff;
-        color: #757575;
         font-size: 2rem;
-        font-weight: 500;
     }
 }
 

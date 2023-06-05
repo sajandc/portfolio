@@ -1,4 +1,3 @@
-// import Stepper from "../../../CustomComponent/Stepper";
 import workprocess from "../../../Constants/workprocess.json";
 import Carousel from "../../../CustomComponent/Carousel";
 export default function WorkProcess() {
@@ -12,7 +11,6 @@ export default function WorkProcess() {
         my work.
       </div>
       <Carousel data={workprocess}/>
-      {/* <Stepper /> */}
     </div>
   );
 }

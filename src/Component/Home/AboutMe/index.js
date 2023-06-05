@@ -1,6 +1,7 @@
 import "./index.scss";
 import { useNavigate } from "react-router-dom";
 import Button from "../../../CustomComponent/Button";
+import List from "../../../CustomComponent/List";
 
 export default function AboutMe() {
   const navigate = useNavigate();
@@ -32,42 +33,7 @@ export default function AboutMe() {
       </div>
       <div className="social-media">
         <div>Follow me:</div>
-        <ul className="list">
-          <li>
-            <a
-              href="https://www.linkedin.com/in/sajandchouhan/"
-              target="_blank"
-            >
-              LinkendIn
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/sajandc" target="_blank">
-              Github
-            </a>
-          </li>
-          <li>
-            <a href="https://twitter.com/iam_SajanDC" target="_blank">
-              Twitter
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.instagram.com/sajan.d.chouhan/"
-              target="_blank"
-            >
-              Instagram
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.youtube.com/channel/UC9l0BBYYB0BxMOta-e5q60g"
-              target="_blank"
-            >
-              Youtube
-            </a>
-          </li>
-        </ul>
+        <List />
       </div>
     </div>
   );

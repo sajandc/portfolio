@@ -121,19 +121,6 @@
             list-style-type: none;
             display: flex;
             justify-content: space-around;
-
-            a {
-                text-decoration: none;
-                color: inherit;
-            }
-
-            li {
-                display: inline-flex;
-
-                &:hover {
-                    text-decoration: underline;
-                }
-            }
         }
     }
 
@@ -165,6 +152,7 @@
     .about-me {
         margin-top: -45px;
     }
+
     .description-box {
         flex-direction: column;
 
@@ -183,23 +171,27 @@
             width: 100% !important;
         }
     }
+
     .work-ex {
         h1 {
             font-size: 4vw;
         }
-        li {
 
-        }
+        li {}
     }
+
     .work-process {
         h3 {
             padding: 3vw 6vw 0vw;
         }
+
         .description {
             padding: 0vw 6vw 6vw;
         }
+
         padding: unset !important;
         padding-bottom: 8vw !important;
+
         h1 {
             padding: 0vw 6vw 0vw;
         }

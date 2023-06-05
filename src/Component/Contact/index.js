@@ -4,19 +4,31 @@ import Header from "../Header";
 import Button from "../../CustomComponent/Button";
 import TextInput from "../../CustomComponent/TextInput";
 import { useState } from "react";
+import { callAPI, validateEmail } from "../../helper/commonFunction";
+import { QUERY } from "../../Constants/url";
 export default function Contact() {
   const [state, setState] = useState({ name: "", email: "", message: "" });
   const [success, setSuccess] = useState(false);
+  const [error, setError] = useState("")
   const onChange = (event) => {
     state[event.target.id] = event.target.value;
     setState({ ...state });
+    setError("");
   };
 
   const onSubmit = (event) => {
     event.preventDefault();
     event.stopPropagation();
-    setSuccess(true);
-    console.log("state", state);
+    if (!validateEmail(state.email)) {
+      setError("Please Enter Valid Email Id");
+      return -1;
+    }
+    callAPI(
+      { query: state.message, email: state.email, name: state.name },
+      QUERY
+    ).then((res) => {
+      setSuccess(true);
+    });
   };
   return (
     <>
@@ -39,18 +51,22 @@ export default function Contact() {
               id="name"
               value={state.name}
               placeholder="Name"
+              required
               onChange={onChange}
             />
             <TextInput
               id="email"
               value={state.email}
               placeholder="Email"
+              required
               onChange={onChange}
             />
+            {error && <div className="red">{error}</div>}
             <TextInput
               id="message"
               placeholder="Message"
               type="textarea"
+              required
               onChange={onChange}
               value={state.message}
             />

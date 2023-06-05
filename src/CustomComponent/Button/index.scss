@@ -4,24 +4,25 @@
     border-radius: 30px;
     width: 250px;
     font-weight: 600;
-    font-size: 1.3vw;
+    font-size: 2vw;
     transition: all ease-in 0.2s;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #212121;
+    background-color: #eee8e8;
     box-shadow: 3px 3px 5px #1b1a1a, -3px -3px 5px #2b2b2b;
     border: none;
-    color: #fff;
+    color: #2b2b2b;
     letter-spacing: 2px;
 
     &:hover {
         box-shadow: inset 3px 3px 5px #1b1a1a, inset -3px -3px 5px #2b2b2b;
         transform: scale(0.98);
     }
+
     &:active {
-            box-shadow: inset 3px 3px 5px #1b1a1a, inset -3px -3px 5px #2b2b2b;
-            transform: scale(0.98);
+        box-shadow: inset 3px 3px 5px #1b1a1a, inset -3px -3px 5px #2b2b2b;
+        transform: scale(0.98);
     }
 }
 
