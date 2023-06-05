@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import "./index.scss";
 
-export default function Rating({ min, max, value, onChange }) {
+export default function Rating({ min, max, value, onChange, id }) {
   useEffect(() => {
-    const slider_input = document.getElementById("slider_input"),
+    const slider_input = document.getElementById(id),
       slider_thumb = document.getElementById("slider_thumb"),
       slider_line = document.getElementById("slider_line");
     slider_thumb.innerHTML = value;
@@ -24,20 +24,22 @@ export default function Rating({ min, max, value, onChange }) {
 
     slider_thumb.style.left = bulletPosition * space + "px";
     slider_line.style.width = (val * 100) / max + "%";
+    event.stopPropagation();
+    event.preventDefault()
     setTimeout(() => {
       onChange(val);
     });
   };
   return (
-    <div class="container">
-      <div class="range-slider">
-        <div id="slider_thumb" class="range-slider_thumb"></div>
-        <div class="range-slider_line">
-          <div id="slider_line" class="range-slider_line-fill"></div>
+    <div className="container">
+      <div className="range-slider">
+        <div id="slider_thumb" className="range-slider_thumb"></div>
+        <div className="range-slider_line">
+          <div id="slider_line" className="range-slider_line-fill"></div>
         </div>
         <input
-          id="slider_input"
-          class="range-slider_input"
+          id={id}
+          className="range-slider_input"
           type="range"
           value={value}
           onChange={showSliderValue}

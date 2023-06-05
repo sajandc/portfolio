@@ -37,6 +37,23 @@
         padding: 20px;
         box-sizing: border-box;
         z-index: 1;
+        background: #2a2727a6;
+        border-radius: 30px;
+        &.success {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            
+            >div, .sucess-thumb {
+                margin-bottom: 4vw;
+                text-align: center;
+                font-size: 2vw;
+                &:first-child {
+                    font-size: 4vw;
+                }
+            }
+        }
     }
 
     .contact-text {

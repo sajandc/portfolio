@@ -3,7 +3,21 @@ import Marquee from "../../CustomComponent/Marquee";
 import Header from "../Header";
 import Button from "../../CustomComponent/Button";
 import TextInput from "../../CustomComponent/TextInput";
+import { useState } from "react";
 export default function Contact() {
+  const [state, setState] = useState({ name: "", email: "", message: "" });
+  const [success, setSuccess] = useState(false);
+  const onChange = (event) => {
+    state[event.target.id] = event.target.value;
+    setState({ ...state });
+  };
+
+  const onSubmit = (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+    setSuccess(true);
+    console.log("state", state);
+  };
   return (
     <>
       <Header />
@@ -19,12 +33,36 @@ export default function Contact() {
             in the form and I’ll get back to you.
           </div>
         </div>
-        <form className="contact-form">
-          <TextInput placeholder="Name" onChange={() => {}}/>
-          <TextInput placeholder="Email" onChange={() => {}}/>
-          <TextInput placeholder="Message" type="textarea" onChange={() => {}}/> 
-          <Button text="Submit" className="contact-btn"/>
-        </form>
+        {!success ? (
+          <form className="contact-form" onSubmit={onSubmit}>
+            <TextInput
+              id="name"
+              value={state.name}
+              placeholder="Name"
+              onChange={onChange}
+            />
+            <TextInput
+              id="email"
+              value={state.email}
+              placeholder="Email"
+              onChange={onChange}
+            />
+            <TextInput
+              id="message"
+              placeholder="Message"
+              type="textarea"
+              onChange={onChange}
+              value={state.message}
+            />
+            <Button type="submit" text="Submit" className="contact-btn" />
+          </form>
+        ) : (
+          <div className="contact-form success">
+            <div>Thank you</div>
+            <span class="material-symbols-outlined sucess-thumb">thumb_up</span>
+            <div>We will contact you soon, thanks for showing interest</div>
+          </div>
+        )}
       </div>
     </>
   );
