@@ -28,7 +28,19 @@
             &::after {
                 width: 105px;
             }
+            img {
+                filter: unset;
+                background-color: #fff;
+                border-radius: 4px;
+            }
         }
+    }
+    img {
+        height: 20px;
+        width: 20px;
+        margin-left: 5px;
+        transition: all ease-in 0.2s;
+        filter: invert(1);
     }
 }
 
@@ -41,6 +53,11 @@
                     width: 0;
                 }
             }
+        }
+        img {
+            height: 10px;
+            width: 10px;
+            margin-left: 0px;
         }
     }
 

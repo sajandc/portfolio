@@ -91,10 +91,13 @@
 
     .service {
         margin-top: 30px !important;
-        padding: 6vw !important;
+        padding: 6vw 3vw !important;
 
         .items {
             margin-bottom: unset !important;
+            li {
+                padding: 1vw 2vw !important;
+            }
         }
     }
 }

@@ -1,22 +1,27 @@
 [
     {
         "title": "LinkendIn",
-        "link": "https://www.linkedin.com/in/sajandchouhan/"
+        "link": "https://www.linkedin.com/in/sajandchouhan/",
+        "icon": "linkedin"
     },
     {
         "title": "Github",
-        "link": "https://github.com/sajandc"
+        "link": "https://github.com/sajandc",
+        "icon": "github"
     },
     {
         "title": "Twitter",
-        "link": "https://twitter.com/iam_SajanDC"
+        "link": "https://twitter.com/iam_SajanDC",
+        "icon": "twitter"
     },
     {
         "title": "Instagram",
-        "link": "https://www.instagram.com/sajan.d.chouhan/"
+        "link": "https://www.instagram.com/sajan.d.chouhan/",
+        "icon": "insta"
     },
     {
         "title": "Youtube",
-        "link": "https://www.youtube.com/channel/UC9l0BBYYB0BxMOta-e5q60g"
+        "link": "https://www.youtube.com/channel/UC9l0BBYYB0BxMOta-e5q60g",
+        "icon": "youtube"
     }
 ]
