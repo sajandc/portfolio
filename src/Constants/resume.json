@@ -1,0 +1,98 @@
+{
+    "name": "Sajan Chouhan",
+    "designation": "SDE2 @happay (CRED)",
+    "description": "Seeking a position to work in a pragmatic way in an organisation where I can show my talent and enhance my skill and abilities to meet the company goal and objective with full integrity and zest",
+    "mail": "sajan.d.chouhan@gmail.com",
+    "mobile": "8319642003",
+    "location": "Bangalore, India",
+    "img_url": "",
+    "social": [
+        {
+            "title": "linkedin.com/in/sajandchouhan",
+            "icon": "linkedin",
+            "link": "https://www.linkedin.com/in/sajandchouhan/"
+        },
+        {
+            "title": "github.com/sajandc",
+            "icon": "github",
+            "link": "https://github.com/sajandc"
+        }
+    ],
+    "skills": [
+        "ReactJs",
+        "Javascript",
+        "SCSS",
+        "Micro Frontend",
+        "Design System",
+        "Mobile Web Developement"
+    ],
+    "education": [
+        {
+            "class": "M.Tech",
+            "institute": "Indian Institue of Information Technology - Allahabad",
+            "duration": "07/2016 - 06/2018",
+            "branch": "Information Technology",
+            "marks": "CGPA - 8.6",
+            "location": "Allahabad"
+        },
+        {
+            "class": "B.E.",
+            "institute": "University Institute of Technology - RGPV",
+            "duration": "06/2011 - 06/2015",
+            "branch": "Computer Science",
+            "location": "Bhopal"
+        }
+    ],
+    "projects": [
+        {
+            "title": "Happay Widgets",
+            "link": "",
+            "description": [
+                "This product was developed from scratch and here we are actively working on developing our own NPM library i.e. widgets which supports various Products theme, Product styles so that it can be used across platform and hence we can maintain uniformity between products.",
+                "We have developed various components form scratch such as Product Navigation, date range, File upload, custom Input field, Dropdown, Button, Checkbox, Toggle, Radio button, File upload, Popup, Slider, Tab, etc which supports various custom functionalities."
+            ]
+        },
+        {
+            "title": "Happay Payments",
+            "link": "",
+            "description": [
+                "This is our payments products and We have developed this from scratch on ReactJs, Redux and React Router. We have build various component such as dashboard, User profile, payments listing, approvals listing etc which all are responsive"
+            ]
+        },
+        {
+            "title": "Happay Cards",
+            "link": "",
+            "description": [
+                "We have developed this product from scratch which was build on ReactJs, Redux and React Router. We have build various component such as Landing page, User profile, User list, KYC component, Expense list, Expense details components etc which all are responsive"
+            ]
+        },
+        {
+            "title": "Happay Travel",
+            "link": "",
+            "description": [
+                "Here we have worked on Flight search, Flight list, Flight details, Payments components which was purely and single handedly build on ReactJs and Flux. We have also build Login Component which was on Redux, We are also involved in transforming whole application to PWA and Mobile responsive"
+            ]
+        },
+        {
+            "title": "Happay Analytics",
+            "link": "",
+            "description": [
+                "This is our analytics product which includes various custom configurations of the charts and tables and it also includes various dashboards within it. This product was single handedly developed and maintained by me."
+            ]
+        },
+        {
+            "title": "Happay Expense",
+            "link": "",
+            "description": [
+                "Here I was involved in developing and managing most complicated part of product i.e. Extrafield, which involved less CSS but more of logical part . Was also involved in developing OCR configuration, KYC component etc with ReactJs and Flux."
+            ]
+        },
+        {
+            "title": "Happay ISAC",
+            "link": "",
+            "description": [
+                "We have also build this product from scratch with ReactJs, Redux and React router This Product was developed as a PWA and its also a Mobile responsive."
+            ]
+        }
+    ]
+}

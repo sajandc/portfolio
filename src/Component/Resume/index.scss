@@ -1,0 +1,270 @@
+$light: #459399;
+$dark: #313c4d;
+
+.resume-container {
+    margin-top: -126px;
+
+    .inner-container {
+        padding: 30px;
+        width: 80vw;
+        border: 1px solid #fff;
+        border-radius: 10px;
+        margin: 166px auto 60px;
+        // color: #fff;
+        background-color: #fff;
+        color: $dark;
+
+        a {
+            color: inherit;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            transition: all ease-in 0.1s;
+            &:hover {
+                font-weight: 600;
+            }
+        }
+
+        .content-1 {
+            display: flex;
+            align-items: flex-start;
+
+            >div {
+                &:nth-child(1) {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 15%;
+
+                    img {
+                        height: 150px;
+                        width: 150px;
+                        border: 3px solid;
+                        border-radius: 50%;
+                        margin-top: 30px;
+                        object-fit: cover;
+                        transition: all ease-in 0.2s;
+                        &:hover {
+                            box-shadow: 0px 0px 10px 5px $light;
+                        }
+                    }
+                }
+
+                &:nth-child(2) {
+                    margin-left: 30px;
+                    width: 55%;
+
+                    h1 {
+                        margin-bottom: 5px;
+                    }
+
+                    p {
+                        margin-top: 0px;
+                    }
+                }
+
+                &:nth-child(3) {
+                    margin-left: 30px;
+                    width: 30%;
+                    background-color: $dark;
+                    border-radius: 10px;
+                    color: #fff;
+                    padding: 20px 40px;
+
+                    a {
+                        >span {
+                            margin-right: 10px;
+                        }
+
+                        >img {
+                            height: 24px;
+                            margin-right: 10px;
+                            filter: invert(1);
+                        }
+                    }
+
+                    ul {
+                        list-style: none;
+                        margin: unset;
+                        padding: unset;
+
+                        li {
+                            margin: 16px 0px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .content-2 {
+            .skills {
+                display: inline-flex;
+                padding: 6px 10px;
+                background-color: $dark;
+                color: #fff;
+                margin: 10px;
+                border-radius: 8px;
+                font-size: 18px;
+                font-weight: 600;
+            }
+        }
+
+        .content-3 {
+            .eduction-container {
+                margin: 0px 0px 20px 20px;
+
+            }
+        }
+        .content-4 {
+            .projects-container {
+                margin-left: 20px;
+                ul {
+                    font-size: 16px;
+                    font-weight: 500;
+                    list-style: square;
+                    li {
+                        margin-bottom: 10px;
+                        &::marker {
+                            color: $light;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+.seperator {
+    display: flex;
+    align-items: center;
+    margin: 30px 0px;
+
+    .seperator-title {
+        font-size: 24px;
+        font-weight: 600;
+        display: inline-flex;
+        white-space: nowrap;
+    }
+
+    .icon-container {
+        background-color: $dark;
+        display: inline-flex;
+        padding: 6px;
+        color: #fff;
+        border-radius: 6px;
+        position: relative;
+        margin: 0px 10px 0px 20px;
+
+        &::before {
+            content: "";
+            height: 25px;
+            width: 10px;
+            background-color: $light;
+            position: absolute;
+            left: -12px;
+            border-radius: 2px;
+        }
+
+        &::after {
+            content: "";
+            height: 20px;
+            width: 10px;
+            background-color: $light;
+            position: absolute;
+            left: -24px;
+            top: 8px;
+            border-radius: 2px;
+        }
+    }
+
+    .line-container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        .line {
+            display: inline-flex;
+            border-radius: 4px;
+            width: 30%;
+            height: 6px;
+            background-color: $light;
+
+            &.dark {
+                background-color: $dark;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .inner-container {
+        padding: 10px !important;
+        width: 95vw !important;
+        margin: 128px auto 0px !important;
+    }
+    .content-1 {
+        flex-direction: column;
+        .image {
+            margin-top: 0px !important;
+        }
+        h1 {
+            margin-top: 0px !important;
+        }
+        h1, .designation, .description {
+            text-align: center;
+        }
+        >div {
+            width: 100% !important;
+            margin-left: 0px !important;
+            padding: 10px !important;
+            box-sizing: border-box;
+        }
+    }
+    .projects-container {
+        margin-left: 10px !important;
+        ul {
+            padding-left: 20px !important;
+        }
+    }
+    .seperator-title {
+        font-size: 5vw !important;
+    }
+}
+
+
+.primary {
+    color: $light;
+}
+
+.fw-800 {
+    font-weight: 800;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+.font-12 {
+    font-size: 12px;
+}
+
+.font-14 {
+    font-size: 14px;
+}
+
+.font-20 {
+    font-size: 20px;
+}
+
+.font-18 {
+    font-size: 18px;
+}
+
+.margin-b-6 {
+    margin-bottom: 6px;
+}

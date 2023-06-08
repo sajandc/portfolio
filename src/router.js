@@ -4,10 +4,8 @@ import Blogs from "./Component/Blogs";
 import About from "./Component/About";
 import Contact from "./Component/Contact";
 import Projects from "./Component/Projects"
+import Resume from "./Component/Resume";
 import {
-  BrowserRouter,
-  Routes,
-  Route,
   createHashRouter,
   RouterProvider,
 } from "react-router-dom";
@@ -22,6 +20,10 @@ export default function Router() {
     {
       path: "about",
       element: <About />,
+    },
+    {
+      path: "resume",
+      element: <Resume />,
     },
     {
       path: "blogs",

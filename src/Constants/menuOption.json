@@ -8,6 +8,10 @@
         "route": "/about"
     },
     {
+        "title": "Resume",
+        "route": "/resume"
+    },
+    {
         "title": "Blogs",
         "route": "/blogs"
     },

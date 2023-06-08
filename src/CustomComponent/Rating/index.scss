@@ -3,8 +3,11 @@
     align-items: center;
     justify-content: center;
     >.material-symbols-outlined {
-        margin: 0px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         font-size: 40px;
+        width: 80px;
     }
 }
 
@@ -66,7 +69,7 @@
     z-index: 2;
     .material-symbols-outlined {
         font-size: 40px;
-       
+        width: 40px;
     }
 }
 
@@ -104,8 +107,8 @@
 @media only screen and (max-width: 700px) {
     .container {
         >.material-symbols-outlined {
-            margin: 0px 5px;
             font-size: 30px;
+            width: 60px;
         }
     }
     .range-slider_thumb {
@@ -117,6 +120,6 @@
     }
 
     .range-slider {
-        height: 10vmin;
+        height: 16vmin;
     }
 }
