@@ -7,16 +7,26 @@ $dark: #313c4d;
 
     .download-resume {
         position: fixed;
-        bottom: 0px;
+        bottom: 20px;
         background-color: #fff;
         padding: 10px 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        box-shadow: 0px 0px 4px 1px #747474;
         border-radius: 20px;
         font-weight: 600;
         transition: all ease-in-out 0.2s;
+        text-decoration: none;
+        color: inherit;
         cursor: pointer;
+        display: flex;
+        align-items: center;
+        >div{
+            margin-right: 10px;
+        }
          &:hover {
             font-weight: 700;
-            transform: scale(1.1);
+            box-shadow: 0px 0px 10px 3px #747474;
          }
     }
 
@@ -249,7 +259,7 @@ $dark: #313c4d;
     .resume-inner-container {
         padding: 10px !important;
         width: 95vw !important;
-        margin: 128px auto 0px !important;
+        margin: 128px auto 60px !important;
     }
 
     .content-1 {

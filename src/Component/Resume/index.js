@@ -6,7 +6,6 @@ import Github from "../../assets/github.png";
 import Photo from "../../assets/photo.JPG";
 export default function Resume({ download }) {
   const {
-    img_url,
     name,
     description,
     mail,
@@ -118,9 +117,12 @@ export default function Resume({ download }) {
           <Seperator title="PROJECTS WORKED ON" icon="terminal" />
           <div className="content-4">{returnProject()}</div>
         </div>
-        {/* <a className="download-resume" download="filename">
-          <div>Download</div>
-        </a> */}
+        {!download && (
+          <a href="./sajan_resume.pdf" className="download-resume" download>
+            <div>Download</div>
+            <span class="material-symbols-outlined">download</span>
+          </a>
+        )}
       </div>
     </>
   );
