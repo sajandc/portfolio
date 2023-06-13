@@ -36,7 +36,7 @@ export default function Feedback() {
   return (
     <div className="feedback">
       {!success ? (
-        <form className="inner-container" onSubmit={onSubmit}>
+        <form className="feedback-inner-container" onSubmit={onSubmit}>
           <div className="title">How would you like to rate this webpage?</div>
           <Rating
             id="rating"
@@ -70,7 +70,7 @@ export default function Feedback() {
           <Button type="submit" text="Send" icon="send" />
         </form>
       ) : (
-        <div className="inner-container">
+        <div className="feedback-inner-container">
           <div className="title">Thank you for your valuable feedback !</div>
           <span class="material-symbols-outlined sucess-thumb">thumb_up</span>
           <div className="description">

@@ -37,6 +37,10 @@ export default function Router() {
       path: "contact",
       element: <Contact />,
     },
+    {
+      path: "resume-download",
+      element: <Resume download/>,
+    },
   ]);
 
   return (

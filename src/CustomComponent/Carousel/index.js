@@ -15,7 +15,7 @@ export default function Carousel({ data }) {
       <div className="carousel-data-container">
         <div
           style={{ transform: `translateX(-${currentIndex * 70}vw)` }}
-          className="inner-container"
+          className="carousel-inner-container"
         >
           {data.map((el, i) => (
             <div className={`steps ${currentIndex === i ? "active" : ""}`}>

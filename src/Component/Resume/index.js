@@ -4,7 +4,7 @@ import resumeJson from "../../Constants/resume.json";
 import LinkedIn from "../../assets/linkedin.png";
 import Github from "../../assets/github.png";
 import Photo from "../../assets/photo.JPG";
-export default function Resume() {
+export default function Resume({download}) {
   const {
     img_url,
     name,
@@ -70,11 +70,14 @@ export default function Resume() {
       </div>
     ));
   };
+
+
+
   return (
     <>
       <div className="resume-container">
-        <NewHeader />
-        <div className="inner-container">
+        {!download && <NewHeader />}
+        <div className={`resume-inner-container ${download ? "download" : ""}`}>
           <div className="content-1">
             <div>
               <img className="image" src={Photo} />
