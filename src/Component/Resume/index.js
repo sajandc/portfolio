@@ -82,6 +82,12 @@ export default function Resume({ download }) {
             <div>
               <h1>{name}</h1>
               <p className="designation primary fw-600">{designation}</p>
+              {download && (
+                <a className="portfolio-link primary" target="_blank" href="https://sajan.co.in">
+                  <span class="material-symbols-outlined">captive_portal</span>
+                  sajan.co.in
+                </a>
+              )}
               <p className="description fw-500 font-14">{description}</p>
             </div>
             <div>

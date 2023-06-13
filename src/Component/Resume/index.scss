@@ -21,13 +21,15 @@ $dark: #313c4d;
         cursor: pointer;
         display: flex;
         align-items: center;
-        >div{
+
+        >div {
             margin-right: 10px;
         }
-         &:hover {
+
+        &:hover {
             font-weight: 700;
             box-shadow: 0px 0px 10px 3px #747474;
-         }
+        }
     }
 
     .resume-inner-container {
@@ -48,20 +50,40 @@ $dark: #313c4d;
             margin-bottom: 0px;
             padding: 40px 80px 80px;
             font-size: 20px;
+
             .font-14 {
                 font-size: 20px;
             }
+
             .font-18 {
                 font-size: 24px;
+
                 li {
                     font-size: 20px;
                 }
             }
+
+            .designation {
+                margin-bottom: 10px;
+            }
+
             .skills {
                 font-size: 24px !important;
             }
+
             .seperator-title {
                 font-size: 26px;
+            }
+
+            .portfolio-link {
+                margin-bottom: 20px;
+                font-weight: 500;
+                color: $light !important;
+
+                >span {
+                    font-size: 20px;
+                    margin-right: 5px;
+                }
             }
         }
 
