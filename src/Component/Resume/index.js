@@ -4,7 +4,7 @@ import resumeJson from "../../Constants/resume.json";
 import LinkedIn from "../../assets/linkedin.png";
 import Github from "../../assets/github.png";
 import Photo from "../../assets/photo.JPG";
-export default function Resume({download}) {
+export default function Resume({ download }) {
   const {
     img_url,
     name,
@@ -71,8 +71,6 @@ export default function Resume({download}) {
     ));
   };
 
-
-
   return (
     <>
       <div className="resume-container">
@@ -120,6 +118,9 @@ export default function Resume({download}) {
           <Seperator title="PROJECTS WORKED ON" icon="terminal" />
           <div className="content-4">{returnProject()}</div>
         </div>
+        {/* <a className="download-resume" download="filename">
+          <div>Download</div>
+        </a> */}
       </div>
     </>
   );

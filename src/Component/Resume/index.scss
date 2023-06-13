@@ -3,6 +3,22 @@ $dark: #313c4d;
 
 .resume-container {
     margin-top: -126px;
+    position: relative;
+
+    .download-resume {
+        position: fixed;
+        bottom: 0px;
+        background-color: #fff;
+        padding: 10px 20px;
+        border-radius: 20px;
+        font-weight: 600;
+        transition: all ease-in-out 0.2s;
+        cursor: pointer;
+         &:hover {
+            font-weight: 700;
+            transform: scale(1.1);
+         }
+    }
 
     .resume-inner-container {
         padding: 30px;
@@ -20,6 +36,23 @@ $dark: #313c4d;
             border-radius: 0px;
             box-sizing: border-box;
             margin-bottom: 0px;
+            padding: 40px 80px 80px;
+            font-size: 20px;
+            .font-14 {
+                font-size: 20px;
+            }
+            .font-18 {
+                font-size: 24px;
+                li {
+                    font-size: 20px;
+                }
+            }
+            .skills {
+                font-size: 24px !important;
+            }
+            .seperator-title {
+                font-size: 26px;
+            }
         }
 
         a {
