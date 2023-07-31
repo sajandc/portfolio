@@ -1,0 +1,80 @@
+{
+    "name": "Rupali Vaishnav",
+    "designation": "",
+    "description": "Seeking a position to work in a pragmatic way in an organisation where I can show my talent and enhance my skill and abilities to meet the company goal and objective with full integrity and zest",
+    "mail": "rups252504@gmail.com",
+    "mobile": "8602382196",
+    "location": "Bangalore, India",
+    "img_url": "",
+    "social": [
+        {
+            "title": "linkedin.com/in/rupali-vaishnav",
+            "icon": "linkedin",
+            "link": "https://www.linkedin.com/in/rupali-vaishnav-b27b311a4/"
+        },
+        {
+            "title": "github.com/rupali",
+            "icon": "github",
+            "link": "https://github.com/Rupali2523"
+        }
+    ],
+    "skills": [
+        "Angular",
+        "Javascript",
+        "CSS",
+        "HTML",
+        "Bootstrap",
+        "Typescript"
+    ],
+    "education": [
+        {
+            "class": "M.Tech",
+            "institute": "Maulana Azad National Institute of Technology (MANIT) - Bhopal",
+            "duration": "07/2018 - 06/2020",
+            "location": "Bhopal"
+        },
+        {
+            "class": "B.E.",
+            "institute": "University Institute of Technology - RGPV",
+            "duration": "06/2011 - 06/2015",
+            "location": "Bhopal"
+        }
+    ],
+    "experience": [
+        {
+            "company": "TCS",
+            "duration": "04/2016 - 04/2018",
+            "designation": "ASE - Assistant Software Engineer",
+            "location": "Mumbai"
+        },
+        {
+            "company": "HASPR",
+            "duration": "06/2020 - 12/2022",
+            "designation": "Front End Engineer"
+        }
+    ],
+    "projects": [
+        {
+            "title": "HASPR",
+            "link": "",
+            "description": [
+                "As a Frontend Developer, I was an integral part of the team responsible for designing and developing the user interface and user experience for the Haspr website.",
+                "The project's focus was to create an intuitive, visually appealing, and responsive frontend that provided seamless navigation and engaging interactions to enhance user satisfaction.",
+                "Technology Stack: Assessed the project's requirements and selected appropriate frontend technologies. The stack included HTML5, CSS3, JavaScript (ES6+), and AngularJS, providing a modern and efficient development environment.",
+                "Component Development: Created reusable and modular UI components, utilizing React.js components and styled with CSS. This approach enhanced development efficiency, maintainability, and encouraged consistent design patterns throughout the website.",
+                "Frontend Optimization: Employed best practices to optimize website performance and loading speed. Minimized HTTP requests, utilized lazy loading for images, and optimized asset sizes to improve the overall user experience."
+            ]
+        },
+        {
+            "title": "TCS - CIBC",
+            "link": "",
+            "description": [
+                "As a Software Testing Specialist, I spearheaded the testing and quality assurance initiative for a complex banking application developed to provide a wide range of financial services to customers. The project's primary objective was to ensure the application's security, accuracy, and reliability while adhering to industry regulations and best practices.",
+                "Test Planning and Strategy: Formulated a comprehensive test strategy, considering the application's complexity and critical functionalities. Developed detailed test plans, encompassing functional, security, performance, and stress testing, to provide complete test coverage.",
+                "Test Data Management: Orchestrated the setup and management of test data, ensuring the availability of realistic scenarios for testing various banking operations while preserving data confidentiality.",
+                "The testing project significantly contributed to the success of the banking application by identifying and addressing critical issues and security vulnerabilities. The application achieved a high level of accuracy and reliability, ensuring seamless banking operations for customers. By meeting regulatory compliance requirements, the project enabled the bank to instill trust among its clients and maintain a strong reputation in the financial services industry.",
+                "The successful completion of the testing project played a crucial role in the application's smooth deployment, leading to enhanced customer satisfaction and business growth."
+            ]
+        }
+    ]
+}

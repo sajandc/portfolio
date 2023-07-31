@@ -5,6 +5,7 @@ import About from "./Component/About";
 import Contact from "./Component/Contact";
 import Projects from "./Component/Projects"
 import Resume from "./Component/Resume";
+import RupaliResume from "./Component/Resume/rupali"
 import {
   createHashRouter,
   RouterProvider,
@@ -26,6 +27,10 @@ export default function Router() {
       element: <Resume />,
     },
     {
+      path: "rupaliresume",
+      element: <RupaliResume />,
+    },
+    {
       path: "blogs",
       element: <Blogs />,
     },
@@ -40,6 +45,10 @@ export default function Router() {
     {
       path: "resume-download",
       element: <Resume download/>,
+    },
+    {
+      path: "rupali-resume-download",
+      element: <RupaliResume download/>,
     },
   ]);
 
