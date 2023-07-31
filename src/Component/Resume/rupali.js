@@ -136,7 +136,7 @@ export default function Resume({ download }) {
           <div className="content-4">{returnProject()}</div>
         </div>
         {!download && (
-          <a href="./sajan_resume.pdf" className="download-resume" download>
+          <a href="./rupali_resume.pdf" className="download-resume" download>
             <div>Download</div>
             <span class="material-symbols-outlined">download</span>
           </a>
