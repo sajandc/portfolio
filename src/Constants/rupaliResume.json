@@ -19,7 +19,7 @@
         }
     ],
     "skills": [
-        "Angular",
+        "ReactJS",
         "Javascript",
         "CSS",
         "HTML",
@@ -60,7 +60,7 @@
             "description": [
                 "As a Frontend Developer, I was an integral part of the team responsible for designing and developing the user interface and user experience for the Haspr website.",
                 "The project's focus was to create an intuitive, visually appealing, and responsive frontend that provided seamless navigation and engaging interactions to enhance user satisfaction.",
-                "Technology Stack: Assessed the project's requirements and selected appropriate frontend technologies. The stack included HTML5, CSS3, JavaScript (ES6+), and AngularJS, providing a modern and efficient development environment.",
+                "Technology Stack: Assessed the project's requirements and selected appropriate frontend technologies. The stack included HTML5, CSS3, JavaScript (ES6+), and ReactJs, providing a modern and efficient development environment.",
                 "Component Development: Created reusable and modular UI components, utilizing React.js components and styled with CSS. This approach enhanced development efficiency, maintainability, and encouraged consistent design patterns throughout the website.",
                 "Frontend Optimization: Employed best practices to optimize website performance and loading speed. Minimized HTTP requests, utilized lazy loading for images, and optimized asset sizes to improve the overall user experience."
             ]
