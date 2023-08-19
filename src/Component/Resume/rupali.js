@@ -77,7 +77,7 @@ export default function Resume({ download }) {
         <div className="font-18 fw-600">
           {el.company}
           <ul>
-            <li className="primary fw-600 margin-b-6">{el.duration}</li>
+            {el.duration && <li className="primary fw-600 margin-b-6">{el.duration}</li>}
             <li className="primary fw-600 margin-b-6">{el.designation}</li>
             {el.location && <li className="primary fw-600 margin-b-6">{el.location}</li>}
           </ul>
