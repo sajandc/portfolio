@@ -28,6 +28,18 @@
     ],
     "education": [
         {
+            "class": "10th",
+            "institute": "Abhyuday Public School - Sagar (M.P.)",
+            "duration": "07/2007 - 06/2008",
+            "location": "Sagar (M.P.)"
+        },
+        {
+            "class": "12th",
+            "institute": "Kendriya Vidhyalaya - Sagar (M.P.)",
+            "duration": "07/2009 - 06/2010",
+            "location": "Sagar (M.P.)"
+        },
+        {
             "class": "M.Tech",
             "institute": "Maulana Azad National Institute of Technology (MANIT) - Bhopal",
             "duration": "07/2018 - 06/2020",
@@ -35,7 +47,8 @@
         },
         {
             "class": "B.E.",
-            "institute": "University Institute of Technology - RGPV",
+            "institute": "University Institute of Technology - RGPV - Bhopal",
+            "duration": "07/2011 - 06/2015",
             "location": "Bhopal"
         }
     ],
