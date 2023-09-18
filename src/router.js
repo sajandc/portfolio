@@ -3,13 +3,11 @@ import Home from "./Component/Home";
 import Blogs from "./Component/Blogs";
 import About from "./Component/About";
 import Contact from "./Component/Contact";
-import Projects from "./Component/Projects"
+import Projects from "./Component/Projects";
 import Resume from "./Component/Resume";
-import RupaliResume from "./Component/Resume/rupali"
-import {
-  createHashRouter,
-  RouterProvider,
-} from "react-router-dom";
+import RupaliResume from "./Component/Resume/rupali";
+import Firojresume from "./Component/Resume/firoj";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import Loader from "./Component/Loader";
 
 export default function Router() {
@@ -44,11 +42,15 @@ export default function Router() {
     },
     {
       path: "resume-download",
-      element: <Resume download/>,
+      element: <Resume download />,
     },
     {
       path: "rupali-resume-download",
-      element: <RupaliResume download/>,
+      element: <RupaliResume download />,
+    },
+    {
+      path: "firoj-resume-download",
+      element: <Firojresume download />,
     },
   ]);
 

@@ -1,0 +1,109 @@
+{
+    "name": "Firoj Khan",
+    "designation": "SDE2 @Embibe",
+    "description": "Seeking a position to work in a pragmatic way in an organisation where I can show my talent and enhance my skill and abilities to meet the company goal and objective with full integrity and zest",
+    "mail": "firojkhan.ui@gmail.com",
+    "mobile": "9839390080",
+    "location": "Bangalore, India",
+    "img_url": "",
+    "social": [
+        {
+            "title": "https://www.linkedin.com/in/fkhan-ui",
+            "icon": "linkedin",
+            "link": "https://www.linkedin.com/in/fkhan-ui"
+        },
+        {
+            "title": "https://github.com/firojkhan-UI",
+            "icon": "github",
+            "link": "https://github.com/firojkhan-UI"
+        }
+    ],
+    "skills": [
+        "ReactJs",
+        "Redux",
+        "Javascript",
+        "SCSS",
+        "HTML5",
+        "Data Structure",
+        "OOPs",
+        "Solved more than 100 ques on Leetcode"
+    ],
+    "education": [
+        {
+            "class": "MCA",
+            "institute": "University Institute of Engineering and Technology - Kanpur",
+            "duration": "07/2014 - 06/2017",
+            "branch": "Computer Application",
+            "location": "Kanpur"
+        },
+        {
+            "class": "BCA",
+            "institute": "Maharashi Dayanand University - (DL)",
+            "duration": "06/2009 - 06/2013",
+            "branch": "Computer Application",
+            "location": "Gorakhpur"
+        }
+    ],
+    "experience": [
+        {
+            "designation": "Frontend Engineer",
+            "company": "Embibe - e Learing",
+            "duration": "Oct 2020 - May 2023",
+            "location": "Bangalore"
+        },
+        {
+            "designation": "Frontend Developer",
+            "company": "Happay - Expense Management",
+            "duration": "July 2019 - May 2020",
+            "location": "Bangalore"
+        }
+    ],
+    "projects": [
+        {
+            "title": "Embibe bita version",
+            "link": "",
+            "description": [
+                "This product was developed from scratch and here we are actively working on developing our own NPM library i.e. widgets which supports various Products theme, Product styles so that it can be used across platform and hence we can maintain uniformity between products.",
+                "We have developed various components form scratch such as Product Navigation, date range, File upload, custom Input field, Dropdown, Button, Banner, Carousel, Checkbox, Toggle, Radio button, File upload, Popup, Slider, Tab, etc which supports various custom functionalities etc which all are responsive."
+            ]
+        },
+        {
+            "title": "Embibe My Favourite Books",
+            "link": "",
+            "description": [
+                "Developed a cart functionality from scratch on ReactJs, Redux and React Router. application to allow users to add favourite books and manage items in their my favourite books.",
+                "Designed and developed a user-friendly cart system that allowed users to select, add, and remove items from their cart. Utilized Redux for state management to ensure real-time updates and smooth user interactions."
+            ]
+        },
+        {
+            "title": "Embibe Autocomplete Widgets",
+            "link": "",
+            "description": [
+                "Developed and integrated autocomplete widgets using ReactJs, Redux and React Router, allowing users to interactively search and select items with ease.Implemented interactive search functionality with real-time suggestions as users type in the input field.",
+                "The autocomplete widgets feature resulted in a 15% increase in user engagement by simplifying the search and selection process."
+            ]
+        },
+        {
+            "title": "Embibe Success Story Landing Page",
+            "link": "",
+            "description": [
+                "I have developed various landing pages using ReactJs, Redux and React Router, ensuring alignment with Embibe's branding and marketing objectives and provide a brief overview or a one-sentence description of the project to give the reader context.",
+                "Designed and developed numerous landing pages to promote eLearning courses and services for Embibe."
+            ]
+        },
+        {
+            "title": "Happay Cards",
+            "link": "",
+            "description": [
+                "We have developed this product from scratch which was build on ReactJs, Redux and React Router. We have build various component such as Landing page, User profile, User list, KYC component, Expense list,flexi benifit, Expense details components etc which all are responsive."
+            ]
+        },
+        {
+            "title": "Happay Expense",
+            "link": "",
+            "description": [
+                "Here I was involved in developing and managing most complicated part of product i.e. Extrafield, which involved less CSS but more of logical part . Was also involved in developing OCR configuration, KYC component etc with ReactJs and Flux."
+            ]
+        }
+    ]
+}
