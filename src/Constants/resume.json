@@ -24,13 +24,26 @@
         "SCSS",
         "Micro Frontend",
         "Design System",
-        "Mobile Web Developement"
+        "Mobile Web Developement",
+        "PWA"
+    ],
+    "experience": [
+        {
+            "company": "VA TECH Venture Pvt. Ltd (CRED)",
+            "duration": "02 May, 2021 - Present",
+            "designation": "Senior Software Engineer"
+        },
+        {
+            "company": "VA TECH Venture Pvt. Ltd",
+            "duration": "03 Jan, 2019 - 01 May, 2021",
+            "designation": "Frontend Developer"
+        }
     ],
     "education": [
         {
             "class": "M.Tech",
             "institute": "Indian Institue of Information Technology - Allahabad",
-            "duration": "07/2016 - 06/2018",
+            "duration": "01 July, 2016 - 01 August, 2018",
             "branch": "Information Technology",
             "marks": "CGPA - 8.6",
             "location": "Allahabad"
@@ -38,12 +51,20 @@
         {
             "class": "B.E.",
             "institute": "University Institute of Technology - RGPV",
-            "duration": "06/2011 - 06/2015",
+            "duration": "01 June, 2011 - 01 June, 2015",
             "branch": "Computer Science",
             "location": "Bhopal"
         }
     ],
     "projects": [
+        {
+            "title": "Happay EPIC",
+            "link": "",
+            "description": [
+                "Pioneered the development of a state-of-the-art payment product as a Progressive Web App (PWA) using React and Redux, providing users with a seamless and responsive payment experience across various devices",
+                "Spearheaded the end-to-end development of a cutting-edge payment product using React and Redux, resulting in a seamless and user-friendly payment experience for customers"
+            ]
+        },
         {
             "title": "Happay Widgets",
             "link": "",

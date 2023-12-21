@@ -16,6 +16,7 @@ export default function Resume({ download }) {
     education,
     projects,
     skills,
+    experience,
   } = resumeJson;
 
   const returnSocial = () => {
@@ -46,6 +47,15 @@ export default function Resume({ download }) {
       </div>
     ));
   };
+    const returnExperience = () => {
+      return experience.map((el) => (
+        <div className="eduction-container">
+          <div className="font-20 fw-800 margin-b-6">{el.company}</div>
+          <div className="font-18 fw-600 margin-b-6">{el.designation}</div>
+          <div className="font-14 primary fw-600 margin-b-6">{el.duration}</div>
+        </div>
+      ));
+    };
 
   const returnProject = () => {
     return projects.map((el) => (
@@ -83,7 +93,10 @@ export default function Resume({ download }) {
               <h1>{name}</h1>
               <p className="designation primary fw-600">{designation}</p>
               {download && (
-                <a className="portfolio-link primary" target="_blank" href="https://sajan.co.in">
+                <a
+                  className="portfolio-link primary"
+                  target="_blank"
+                  href="https://sajan.co.in">
                   <span class="material-symbols-outlined">captive_portal</span>
                   sajan.co.in
                 </a>
@@ -106,8 +119,7 @@ export default function Resume({ download }) {
                 <li>
                   <a
                     target="_blank"
-                    href="https://goo.gl/maps/PaCqoCedaxZT2hR1A"
-                  >
+                    href="https://goo.gl/maps/PaCqoCedaxZT2hR1A">
                     <span class="material-symbols-outlined">location_on</span>
                     {location}
                   </a>
@@ -116,8 +128,10 @@ export default function Resume({ download }) {
               </ul>
             </div>
           </div>
-          <Seperator title="SKILLS" icon="psychology" />
+          <Seperator title="EXPERTISE" icon="psychology" />
           <div className="content-2">{returnSkills()}</div>
+          <Seperator title="EXPERIENCE" icon="tactic" />
+          <div className="content-3">{returnExperience()}</div>
           <Seperator title="EDUCATION" icon="school" />
           <div className="content-3">{returnEducation()}</div>
           <Seperator title="PROJECTS WORKED ON" icon="terminal" />
