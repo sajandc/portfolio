@@ -128,10 +128,10 @@ export default function Resume({ download }) {
           </div>
           <Seperator title="SKILLS" icon="psychology" />
           <div className="content-2">{returnSkills()}</div>
+          <Seperator title="WORK EXPERIENCE" icon="tactic" />
+          <div className="content-4">{returnExp()}</div>
           <Seperator title="EDUCATION" icon="school" />
           <div className="content-3">{returnEducation()}</div>
-          <Seperator title="WORK EXPERIENCE" icon="terminal" />
-          <div className="content-4">{returnExp()}</div>
           <Seperator title="PROJECTS WORKED ON" icon="terminal" />
           <div className="content-4">{returnProject()}</div>
         </div>

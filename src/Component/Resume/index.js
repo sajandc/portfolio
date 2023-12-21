@@ -17,6 +17,7 @@ export default function Resume({ download }) {
     projects,
     skills,
     duration,
+    experience
   } = resumeJson;
 
   const returnSocial = () => {
@@ -47,15 +48,15 @@ export default function Resume({ download }) {
       </div>
     ));
   };
-    // const returnExperience = () => {
-    //   return experience.map((el) => (
-    //     <div className="eduction-container">
-    //       <div className="font-20 fw-800 margin-b-6">{el.company}</div>
-    //       <div className="font-18 fw-600 margin-b-6">{el.designation}</div>
-    //       <div className="font-14 primary fw-600 margin-b-6">{el.duration}</div>
-    //     </div>
-    //   ));
-    // };
+  const returnExperience = () => {
+    return experience.map((el) => (
+      <div className="eduction-container">
+        <div className="font-20 fw-800 margin-b-6">{el.company}</div>
+        <div className="font-18 fw-600 margin-b-6">{el.designation}</div>
+        <div className="font-14 primary fw-600 margin-b-6">{el.duration}</div>
+      </div>
+    ));
+  };
 
   const returnProject = () => {
     return projects.map((el) => (
@@ -131,8 +132,8 @@ export default function Resume({ download }) {
           </div>
           <Seperator title="EXPERTISE" icon="psychology" />
           <div className="content-2">{returnSkills()}</div>
-          {/* <Seperator title="EXPERIENCE" icon="tactic" />
-          <div className="content-3">{returnExperience()}</div> */}
+          <Seperator title="EXPERIENCE" icon="tactic" />
+          <div className="content-3">{returnExperience()}</div>
           <Seperator title="EDUCATION" icon="school" />
           <div className="content-3">{returnEducation()}</div>
           <Seperator title="PROJECTS WORKED ON" icon="terminal" />
