@@ -55,13 +55,15 @@
     "experience": [
         {
             "company": "TCS",
+            "duration": "Duration - 04/2016 - 04/2018",
             "designation": "ASE - Assistant Software Engineer",
             "location": "Mumbai"
         },
         {
             "company": "HASPR",
-            "duration": "06/2020 - 11/2023",
-            "designation": "Front End Engineer"
+            "duration": "Duration - 06/2020 - 11/2023",
+            "designation": "Frontend Engineer",
+            "location": "Bhopal"
         }
     ],
     "projects": [
