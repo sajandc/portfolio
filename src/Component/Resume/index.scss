@@ -116,7 +116,7 @@ $dark: #313c4d;
                         border: 3px solid;
                         border-radius: 50%;
                         margin-top: 30px;
-                        object-fit: cover;
+                        object-fit: contain;
                         transition: all ease-in 0.2s;
 
                         &:hover {
