@@ -45,11 +45,11 @@ export default function Router() {
       element: <Resume download />,
     },
     {
-      path: "rupali-resume-download",
+      path: "rupali",
       element: <RupaliResume download />,
     },
     {
-      path: "firoj-resume-download",
+      path: "firoj",
       element: <Firojresume download />,
     },
   ]);

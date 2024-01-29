@@ -1,6 +1,6 @@
 {
     "name": "Firoj Khan",
-    "designation": "SDE2 @Embibe ",
+    "designation": "Frontend Engineer @Prosperr.io",
     "description": "Seeking a position to work in a pragmatic way in an organisation where I can show my talent and enhance my skill and abilities to meet the company goal and objective with full integrity and zest",
     "mail": "firojkhan.ui@gmail.com",
     "mobile": "9839390080",
@@ -46,7 +46,13 @@
     "experience": [
         {
             "designation": "Frontend Engineer",
-            "company": "Embibe - e Learing",
+            "company": "Prosperr.io - Fintech",
+            "duration": "Oct 2023 - Present",
+            "location": "Bangalore"
+        },
+        {
+            "designation": "Frontend Engineer",
+            "company": "Embibe - e Learning",
             "duration": "Oct 2020 - May 2023",
             "location": "Bangalore"
         },
@@ -59,7 +65,15 @@
     ],
     "projects": [
         {
-            "title": "Embibe bita version",
+            "title": "Minutes Of Meeting",
+            "link": "",
+            "description": [
+                "This product was developed from scratch and here we are actively working on implementing a feature that captures and records conversations between financial advisors and users developed the functionality for seamless sharing of tax declaration documents within the platform, streamlining the financial planning process.",
+                "We have developed various components form scratch such as Product Navigation, date range, File upload, custom Input field, Dropdown, Button, Banner, Carousel, Checkbox, Toggle, Radio button, File upload, Popup, Slider, Tab, etc which supports various custom functionalities etc which all are responsive."
+            ]
+        },
+        {
+            "title": "Embibe beta version",
             "link": "",
             "description": [
                 "This product was developed from scratch and here we are actively working on developing our own NPM library i.e. widgets which supports various Products theme, Product styles so that it can be used across platform and hence we can maintain uniformity between products.",
