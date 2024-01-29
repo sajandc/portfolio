@@ -44,10 +44,10 @@
     ],
     "experience": [
         {
-            "company": "HASPR",
+            "company": "CL Infotech - (HASPR Client)",
             "duration": "Duration - 06/2020 - 11/2023",
             "designation": "Frontend Developer",
-            "location": "Bhopal"
+            "location": "Bangalore"
         },
         {
             "company": "TCS",
@@ -58,7 +58,7 @@
     ],
     "projects": [
         {
-            "title": "HASPR",
+            "title": "CL Infotech - HASPR Client",
             "link": "",
             "description": [
                 "As a Frontend Developer, I was an integral part of the team responsible for designing and developing the user interface and user experience for the Haspr website.",
