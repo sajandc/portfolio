@@ -1,7 +1,7 @@
 {
     "name": "Sajan Chouhan",
     "designation": "SDE2 @happay (CRED)",
-    "description": "Seeking a position to work in a pragmatic way in an organisation where I can show my talent and enhance my skill and abilities to meet the company goal and objective with full integrity and zest",
+    "description": "Seasoned software engineer with 5+ years of hands-on experience in designing, developing, and optimizing robust applications. Adept at leveraging a diverse skill set to deliver innovative solutions.",
     "mail": "sajan.d.chouhan@gmail.com",
     "mobile": "8319642003",
     "location": "Bangalore, India",
@@ -25,7 +25,10 @@
         "Micro Frontend",
         "Design System",
         "Mobile Web Developement",
-        "PWA"
+        "PWA",
+        "App Script",
+        "Redux",
+        "RWD"
     ],
     "experience": [
         {
@@ -61,7 +64,7 @@
             "title": "Happay EPIC",
             "link": "",
             "description": [
-                "Pioneered the development of a state-of-the-art payment product as a Progressive Web App (PWA) using React and Redux, providing users with a seamless and responsive payment experience across various devices",
+                "Pioneered the development of a state-of-the-art payment product as a Progressive Web App (PWA) and RWD using React and Redux, providing users with a seamless and responsive payment experience across various devices",
                 "Spearheaded the end-to-end development of a cutting-edge payment product using React and Redux, resulting in a seamless and user-friendly payment experience for customers"
             ]
         },
