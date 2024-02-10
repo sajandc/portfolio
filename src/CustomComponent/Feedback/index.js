@@ -20,7 +20,8 @@ export default function Feedback() {
     }
     callAPI(
       { message: state.message, rating, email: state.email, name: state.name },
-      FEEDBACK
+      FEEDBACK,
+      "POST"
     ).then((res) => {
       setSuccess(true);
     });

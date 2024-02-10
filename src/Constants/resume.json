@@ -1,7 +1,7 @@
 {
     "name": "Sajan Chouhan",
     "designation": "SDE2 @happay (CRED)",
-    "description": "As a seasoned Frontend Developer with 5+ years of innovation, I am your solution for crafting visually stunning and seamless digital experiences. My expertise spans ReactJs, HTML, CSS, and JavaScript, complemented by a dynamic proficiency in cutting-edge frameworks. I have a proven track record of translating creative concepts into impactful, user-centric designs, contributing to the success of diverse projects across industries. With a collaborative spirit and an eye for detail, I am eager to elevate your team, delivering not just code, but a commitment to excellence that captivates users and exceeds expectations. Let's shape the future of frontend development together.",
+    "description": "Passionate Frontend Developer with 5+ years of experience in crafting visually stunning and seamless digital experiences using ReactJs, HTML, CSS, and JavaScript. Eager to contribute my expertise and commitment to excellence to elevate your team and shape the future of frontend development.",
     "mail": "sajan.d.chouhan@gmail.com",
     "mobile": "8319642003",
     "location": "Bangalore, India",
@@ -18,105 +18,155 @@
             "link": "https://github.com/sajandc"
         }
     ],
-    "skills": [
-        "ReactJs",
-        "Javascript",
-        "SCSS",
-        "Micro Frontend",
-        "Design System",
-        "Mobile Web Developement",
-        "PWA",
-        "App Script",
-        "Redux",
-        "RWD"
-    ],
-    "experience": [
-        {
-            "company": "HAPPAY (CRED)",
-            "duration": "July, 2018 - Present",
-            "designation": "Senior Software Engineer"
-        },
-        {
-            "company": "HAPPAY",
-            "duration": "03 Jan, 2019 - 01 May, 2021",
-            "designation": "Frontend Developer"
-        }
-    ],
-    "education": [
-        {
-            "class": "M.Tech",
-            "institute": "Indian Institue of Information Technology - Allahabad",
-            "duration": "01 July, 2016 - 01 August, 2018",
-            "branch": "Information Technology",
-            "marks": "CGPA - 8.6",
-            "location": "Allahabad"
-        },
-        {
-            "class": "B.E.",
-            "institute": "University Institute of Technology - RGPV",
-            "duration": "01 June, 2011 - 01 June, 2015",
-            "branch": "Computer Science",
-            "location": "Bhopal"
-        }
-    ],
-    "projects": [
-        {
-            "title": "Happay EPIC",
-            "link": "",
-            "description": [
-                "Pioneered the development of a state-of-the-art payment product as a Progressive Web App (PWA) and RWD using React and Redux, providing users with a seamless and responsive payment experience across various devices",
-                "Spearheaded the end-to-end development of a cutting-edge payment product using React and Redux, resulting in a seamless and user-friendly payment experience for customers"
-            ]
-        },
-        {
-            "title": "Happay Widgets",
-            "link": "",
-            "description": [
-                "This product was developed from scratch and here we are actively working on developing our own NPM library i.e. widgets which supports various Products theme, Product styles so that it can be used across platform and hence we can maintain uniformity between products.",
-                "We have developed various components form scratch such as Product Navigation, date range, File upload, custom Input field, Dropdown, Button, Checkbox, Toggle, Radio button, File upload, Popup, Slider, Tab, etc which supports various custom functionalities."
-            ]
-        },
-        {
-            "title": "Happay Payments",
-            "link": "",
-            "description": [
-                "This is our payments products and We have developed this from scratch on ReactJs, Redux and React Router. We have build various component such as dashboard, User profile, payments listing, approvals listing etc which all are responsive"
-            ]
-        },
-        {
-            "title": "Happay Cards",
-            "link": "",
-            "description": [
-                "We have developed this product from scratch which was build on ReactJs, Redux and React Router. We have build various component such as Landing page, User profile, User list, KYC component, Expense list, Expense details components etc which all are responsive"
-            ]
-        },
-        {
-            "title": "Happay Travel",
-            "link": "",
-            "description": [
-                "Here we have worked on Flight search, Flight list, Flight details, Payments components which was purely and single handedly build on ReactJs and Flux. We have also build Login Component which was on Redux, We are also involved in transforming whole application to PWA and Mobile responsive"
-            ]
-        },
-        {
-            "title": "Happay Analytics",
-            "link": "",
-            "description": [
-                "This is our analytics product which includes various custom configurations of the charts and tables and it also includes various dashboards within it. This product was single handedly developed and maintained by me."
-            ]
-        },
-        {
-            "title": "Happay Expense",
-            "link": "",
-            "description": [
-                "Here I was involved in developing and managing most complicated part of product i.e. Extrafield, which involved less CSS but more of logical part . Was also involved in developing OCR configuration, KYC component etc with ReactJs and Flux."
-            ]
-        },
-        {
-            "title": "Happay ISAC",
-            "link": "",
-            "description": [
-                "We have also build this product from scratch with ReactJs, Redux and React router This Product was developed as a PWA and its also a Mobile responsive."
-            ]
-        }
-    ]
+    "skills": {
+        "title": "SKILLS",
+        "icon": "psychology",
+        "data": [
+            "ReactJs - Advanced proficiency",
+            "Javascript - proficient",
+            "CSS3/SCSS - Extensive experience",
+            "Micro Frontend",
+            "Design System",
+            "Mobile Web Development",
+            "PWA",
+            "App Script",
+            "Redux",
+            "RWD",
+            "HTML5"
+        ]
+    },
+    "experience": {
+        "icon": "business_center",
+        "title": "EXPERIENCE",
+        "data": [
+            {
+                "company": "HAPPAY (CRED)",
+                "link": "https://happay.com/",
+                "duration": "Jan, 2019 - Present",
+                "designation": "Senior Software Engineer",
+                "tech_stack": [
+                    "ReactJs",
+                    "Javascript",
+                    "Redux",
+                    "PWA",
+                    "PWA"
+                ],
+                "projects": [
+                    {
+                        "title": "EPIC - Platform",
+                        "icon": "terminal",
+                        "link": "https://epic.happay.in",
+                        "description": [
+                            "Led the development of an innovative payment solution within a Progressive Web App (PWA) and Responsive Web Design (RWD) framework, using React and Redux.",
+                            "Engineered a seamless and responsive payment experience for diverse devices, demonstrating expertise in driving technological advancements and user-centric solutions."
+                        ]
+                    },
+                    {
+                        "title": "Widgets - UI Library",
+                        "icon": "terminal",
+                        "link": "https://happay-widgets.uat.happay.in",
+                        "description": [
+                            "Initiated and led the end-to-end development of a pioneering product with a proprietary NPM library. Ensured cross-platform compatibility and standardized user experience across multiple products.",
+                            "Developed an extensive suite of adaptable widgets, showcasing proficiency in creating scalable and reusable components."
+                        ]
+                    },
+                    {
+                        "title": "Invoice Solution",
+                        "icon": "terminal",
+                        "link": "https://i2pay.happay.in",
+                        "description": [
+                            "Pioneered the creation of an innovative invoice product using ReactJs, Redux, and React Router. Developed responsive components, showcasing a commitment to delivering adaptable and user-centric applications.",
+                            "Demonstrated expertise in ReactJs, Redux, and React Router for seamless execution and feature-rich product development."
+                        ]
+                    },
+                    {
+                        "title": "Cards Platform",
+                        "icon": "terminal",
+                        "link": "https://cards.happay.in",
+                        "description": [
+                            "Spearheaded the development of a comprehensive product with diverse responsive components. Mastery of ReactJs, Redux, and React Router resulted in a seamlessly integrated and highly responsive product.",
+                            "Active involvement in optimizing user experience across various devices, emphasizing adaptability and user-centric design."
+                        ]
+                    },
+                    {
+                        "title": "Travel Portal",
+                        "icon": "terminal",
+                        "link": "https://travel.happay.in",
+                        "description": [
+                            "Single-handedly led the development of critical components, emphasizing adaptability and user-centric design. Actively participated in the transformation of the entire application into a PWA, showcasing a commitment to staying at the forefront of technological advancements.",
+                            "Hands-on experience with ReactJs, Flux, and Redux highlights a deep understanding of modern front-end technologies."
+                        ]
+                    },
+                    {
+                        "title": "Analytics",
+                        "icon": "terminal",
+                        "link": "https://admin.happay.in/analytics",
+                        "description": [
+                            "Conceived, developed, and maintained a sophisticated analytics product. Proficient in crafting custom configurations for charts and tables, reflecting a dedication to delivering impactful and user-friendly applications.",
+                            "Hands-on experience underscores proficiency in analytics tool development and autonomous delivery of end-to-end solutions."
+                        ]
+                    },
+                    {
+                        "title": "Expense Portal",
+                        "icon": "terminal",
+                        "link": "https://expense.happay.in",
+                        "description": [
+                            "Played a pivotal role in developing the Expense portal, focusing on intricate logical implementations. Actively participated in the development of crucial components such as OCR configuration and KYC, showcasing proficiency in logical problem-solving and advanced front-end technologies.",
+                            "Contributions highlight an ability to excel in challenging and detail-oriented projects."
+                        ]
+                    },
+                    {
+                        "title": "ISAC",
+                        "icon": "terminal",
+                        "link": "https://isac.happay.in/v2/docs",
+                        "description": [
+                            "Led the comprehensive development of ISAC, a product built entirely from scratch using ReactJs, Redux, and React Router. Meticulously crafted as a Progressive Web App (PWA) for optimal accessibility.",
+                            "Steered the creation of detailed API documentation, demonstrating technical proficiency and effective communication skills. PWA and mobile responsiveness highlight a commitment to cutting-edge solutions."
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "education": {
+        "title": "Reward",
+        "icon": "social_leaderboard",
+        "data": [
+            {
+                "class": "M.Tech",
+                "institute": "Indian Institute of Information Technology - Allahabad",
+                "duration": "01 July, 2016 - 01 August, 2018",
+                "branch": "Information Technology",
+                "marks": "CGPA - 8.6",
+                "location": "Allahabad"
+            },
+            {
+                "class": "B.E.",
+                "institute": "University Institute of Technology - RGPV",
+                "duration": "01 June, 2011 - 01 June, 2015",
+                "branch": "Computer Science",
+                "location": "Bhopal"
+            }
+        ]
+    },
+    "rewards": {
+        "title": "Reward",
+        "icon": "social_leaderboard",
+        "data": [
+            {
+                "title": "Talent Density Pitstop (TDP) Program Recognition",
+                "description": "Recognized as a top talent in the TDP program for consistently surpassing expectations and making substantial contributions to team success, showcasing exceptional skills and dedication."
+            }
+        ]
+    },
+    "interest": {
+        "title": "Interests",
+        "icon": "sprint",
+        "data": [
+            "Artificial Intelligent",
+            "Travelling",
+            "Bike Riding",
+            "Painting"
+        ]
+    }
 }

@@ -5,6 +5,27 @@ $dark: #313c4d;
     margin-top: -126px;
     position: relative;
 
+    .resume-section {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 30px;
+    }
+
+    .rewards {
+        list-style: hebrew;
+    }
+
+    .interests {
+        display: inline-flex;
+        padding: 6px 10px;
+        border: 2px solid $dark;
+        color: $dark;
+        margin: 10px;
+        border-radius: 8px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
     .download-resume {
         position: fixed;
         bottom: 20px;
@@ -188,30 +209,73 @@ $dark: #313c4d;
             .eduction-container {
                 margin: 0px 0px 20px 20px;
 
-            }
-        }
+                .company {
+                    display: flex;
+                    align-items: baseline;
 
-        .content-4 {
-            .projects-container {
-                margin-left: 20px;
-
-                ul {
-                    font-size: 16px;
-                    font-weight: 500;
-                    list-style: square;
-
-                    li {
-                        margin-bottom: 10px;
-
-                        &::marker {
-                            color: $light;
-                        }
+                    a {
+                        margin-right: 10px;
+                        text-decoration: underline;
                     }
+
+                    .tech-stack {
+                        margin-left: 10px;
+                        font-weight: 500;
+                        font-size: 16px;
+                        color: $light
+                    }
+                }
+
+                .project-wrapper {
+                    margin-top: 20px;
+                    padding-left: 0px;
+                    list-style: none;
+
+                    .projects-container {
+                        .project-name {
+                            display: flex;
+                            align-items: center;
+                            margin-bottom: 6px;
+
+                            >span {
+                                &:first-child {
+                                    font-size: 18px;
+                                    margin-right: 10px;
+                                }
+                            }
+                        }
+
+                        ul {
+                            font-size: 16px;
+                            font-weight: 500;
+                            list-style: square;
+
+                            li {
+                                margin-bottom: 10px;
+
+                                &::marker {
+                                    color: $light;
+                                }
+                            }
+                        }
+
+                    }
+
+
                 }
 
             }
         }
+
     }
+}
+
+.margin-l-6 {
+    margin-left: 6px;
+}
+
+.margin-r-6 {
+    margin-right: 6px;
 }
 
 .seperator {

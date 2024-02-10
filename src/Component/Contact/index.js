@@ -25,7 +25,8 @@ export default function Contact() {
     }
     callAPI(
       { query: state.message, email: state.email, name: state.name },
-      QUERY
+      QUERY,
+      "POST"
     ).then((res) => {
       setSuccess(true);
     });

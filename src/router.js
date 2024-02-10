@@ -22,11 +22,11 @@ export default function Router() {
     },
     {
       path: "resume",
-      element: <Resume />,
+      element: <Resume path="sajan" />,
     },
     {
-      path: "rupaliresume",
-      element: <RupaliResume />,
+      path: "rupali",
+      element: <Resume path="rupali" />,
     },
     {
       path: "blogs",
@@ -42,11 +42,11 @@ export default function Router() {
     },
     {
       path: "resume-download",
-      element: <Resume download />,
+      element: <Resume path="sajan" download />,
     },
     {
-      path: "rupali",
-      element: <RupaliResume download />,
+      path: "rupali-download",
+      element: <Resume path="rupali" download />,
     },
     {
       path: "firoj",
@@ -59,16 +59,5 @@ export default function Router() {
       <Loader />
       <RouterProvider router={router} />
     </>
-
-    // <BrowserRouter>
-    // <Loader/>
-    //   <Routes>
-    //     <Route path="/" element={<Home />} />
-    //     <Route path="/about" element={<About />} />
-    //     <Route path="/blogs" element={<Blogs />} />
-    //     <Route path="/contact" element={<Contact />} />
-    //     <Route path="*" element={<div>No Page coming soon</div>} />
-    //   </Routes>
-    // </BrowserRouter>
   );
 }

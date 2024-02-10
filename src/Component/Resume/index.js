@@ -1,28 +1,39 @@
+import { useEffect, useState } from "react";
 import "./index.scss";
 import NewHeader from "../Header";
-import resumeJson from "../../Constants/resume.json";
 import LinkedIn from "../../assets/linkedin.png";
 import Github from "../../assets/github.png";
-import Photo from "../../assets/photo.JPG";
-export default function Resume({ download }) {
+import SajanPhoto from "../../assets/photo.JPG";
+import RupaliPhoto from "../../assets/rupali.jpg";
+import { callAPI } from "../../helper/commonFunction";
+import { RESUME } from "../../Constants/url";
+export default function Resume({ download, path }) {
+  const [data, setData] = useState({});
+  useEffect(() => {
+    callAPI({}, `${RESUME}?name=${path}`, "GET")
+      .then((res) => setData(res))
+      .catch((error) => console.log("error", error));
+  }, []);
+
   const {
-    name,
-    description,
-    mail,
-    mobile,
-    location,
-    designation,
-    social,
-    education,
-    projects,
-    skills,
-    duration,
-    experience
-  } = resumeJson;
+    name = "",
+    description = "",
+    mail = "",
+    mobile = "",
+    location = "",
+    designation = "",
+    social = [],
+    education = {},
+    skills = {},
+    duration = "",
+    experience = {},
+    rewards = {},
+    interests = {},
+  } = data;
 
   const returnSocial = () => {
-    return social.map((el) => (
-      <li>
+    return social?.map((el) => (
+      <li key={el.title}>
         <a target="_blank" href={el.link}>
           <img src={el.icon === "linkedin" ? LinkedIn : Github} />
           {el.title}
@@ -31,13 +42,28 @@ export default function Resume({ download }) {
     ));
   };
 
+  const returnRewards = () => {
+    return rewards?.data?.map((el) => (
+      <li key={el.title}>
+        <div className="font-18 fw-600 margin-b-6">{el.title}</div>
+        <div className="font-14 fw-500 margin-b-6 ">{el.description}</div>
+      </li>
+    ));
+  };
+
+
+
   const returnSkills = () => {
-    return skills.map((el) => <div className="skills">{el}</div>);
+    return skills?.data?.map((el) => (
+      <div key={el} className="skills">
+        {el}
+      </div>
+    ));
   };
 
   const returnEducation = () => {
-    return education.map((el) => (
-      <div className="eduction-container">
+    return education?.data?.map((el) => (
+      <div key={el.class} className="eduction-container">
         <div className="font-20 fw-800 margin-b-6">{el.class}</div>
         <div className="font-18 fw-600 margin-b-6">{el.institute}</div>
         <div className="font-14 primary fw-600 margin-b-6">{el.duration}</div>
@@ -48,36 +74,56 @@ export default function Resume({ download }) {
       </div>
     ));
   };
+
+  const returnTechStack = (techStack = []) => {
+    return techStack.join(", ");
+  };
+
   const returnExperience = () => {
-    return experience.map((el) => (
-      <div className="eduction-container">
-        <div className="font-20 fw-800 margin-b-6">{el.company}</div>
+    return experience?.data?.map((el) => (
+      <div key={el.link} className="eduction-container">
+        <div className="company font-20 fw-800 margin-b-6">
+          <a href={el.link}>{el.company}</a>|
+          <span className="tech-stack">{returnTechStack(el.tech_stack)}</span>
+        </div>
         <div className="font-18 fw-600 margin-b-6">{el.designation}</div>
         <div className="font-14 primary fw-600 margin-b-6">{el.duration}</div>
+        <ul className="project-wrapper">{returnProject(el.projects)}</ul>
       </div>
     ));
   };
 
-  const returnProject = () => {
-    return projects.map((el) => (
-      <div className="projects-container">
+  const returnInterests = () => {
+    return interests?.data?.map((el) => <div className="interests">{el}</div>);
+  };
+
+  const returnProject = (projects = []) => {
+    return projects?.map((el) => (
+      <li key={el.title} className="projects-container">
         <div className="font-18 fw-600">
-          {el.link ? (
-            <a target="_blank" href={el.link}>
-              {el.title}{" "}
-              <span class="material-symbols-outlined font-18">link</span>
-            </a>
-          ) : (
-            el.title
-          )}
+          <div className="project-name">
+            <span class="material-symbols-outlined">terminal</span>
+            <span>
+              {el.link ? (
+                <a target="_blank" href={el.link}>
+                  {el.title}{" "}
+                  <span class="material-symbols-outlined font-18 margin-l-6">
+                    link
+                  </span>
+                </a>
+              ) : (
+                el.title
+              )}
+            </span>
+          </div>
 
           <ul>
             {el.description.map((e) => (
-              <li>{e}</li>
+              <li> {e}</li>
             ))}
           </ul>
         </div>
-      </div>
+      </li>
     ));
   };
 
@@ -88,10 +134,13 @@ export default function Resume({ download }) {
         <div className={`resume-inner-container ${download ? "download" : ""}`}>
           <div className="content-1">
             <div>
-              <img className="image" src={Photo} />
+              <img className="image" src={path === "sajan" ? SajanPhoto : RupaliPhoto} />
             </div>
             <div>
-              <h1>{name}</h1>
+              <h1>
+                <span className="fw-500">{name.split(" ")[0]} </span>
+                <span className="fw-800">{name.split(" ")[1]}</span>
+              </h1>
               <p className="designation primary fw-600">{designation}</p>
               <p className="designation primary fw-600">{duration}</p>
               {download && (
@@ -130,17 +179,31 @@ export default function Resume({ download }) {
               </ul>
             </div>
           </div>
-          <Seperator title="EXPERTISE" icon="psychology" />
-          <div className="content-2">{returnSkills()}</div>
-          <Seperator title="EXPERIENCE" icon="tactic" />
-          <div className="content-3">{returnExperience()}</div>
-          <Seperator title="EDUCATION" icon="school" />
-          <div className="content-3">{returnEducation()}</div>
-          <Seperator title="PROJECTS WORKED ON" icon="terminal" />
-          <div className="content-4">{returnProject()}</div>
+          <div className="resume-section">
+            <div>
+              <Seperator title={experience.title} icon={experience.icon} />
+              <div className="content-3">{returnExperience()}</div>
+            </div>
+            <div>
+              <Seperator title={skills.title} icon={skills.icon} />
+              <div className="content-2">{returnSkills()}</div>
+              {rewards.title && (
+                <>
+                  <Seperator title={rewards.title} icon={rewards.icon} />
+                  <div className="content-3">
+                    {<ul className="rewards">{returnRewards()}</ul>}
+                  </div>{" "}
+                </>
+              )}
+              <Seperator title={education.title} icon={education.icon} />
+              <div className="content-3">{returnEducation()}</div>
+              <Seperator title={interests.title} icon={interests.icon} />
+              <div className="content-3">{returnInterests()}</div>
+            </div>
+          </div>
         </div>
         {!download && (
-          <a href="./sajan_resume.pdf" className="download-resume" download>
+          <a href={`./${path}_resume.pdf`} className="download-resume" download>
             <div>Download</div>
             <span class="material-symbols-outlined">download</span>
           </a>

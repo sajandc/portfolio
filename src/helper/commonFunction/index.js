@@ -51,19 +51,20 @@ export const onKeyPress = (event, callBack) => {
 export const scrollToTop = () => {
   window.scrollTo({
     top: 0,
-    behavior: 'smooth'
+    behavior: "smooth",
   });
-}
+};
 
 export const validateEmail = (email) => {
   var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return emailRegex.test(email);
-}
+};
 
-export const callAPI = (payload, url) => {
-  return new Promise((resolve, reject) => {
-    fetch(url, {
-      method: "POST",
+const createOptions = (method, payload) => {
+  let opt = {};
+  if (method === "POST") {
+    opt = {
+      method,
       mode: "no-cors",
       credentials: "include",
       redirect: "follow",
@@ -71,9 +72,24 @@ export const callAPI = (payload, url) => {
         "Content-Type": "application/x-www-form-urlencoded",
       },
       body: qs.stringify(payload),
-    })
-      .then((response) => {
-        resolve("success");
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+      },
+    };
+  }
+  return opt;
+};
+
+export const callAPI = (payload, url, method) => {
+  return new Promise((resolve, reject) => {
+    fetch(url, createOptions(method, payload))
+      .then((response) => response.json())
+      .then((res) => {
+        if (method === "GET") {
+          resolve(res);
+        } else {
+          resolve("success");
+        }
       })
       .catch((error) => {
         reject("error");
