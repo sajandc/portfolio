@@ -1,19 +1,19 @@
 {
     "name": "Rupali Vaishnav",
-    "designation": "",
-    "description": "Seasoned software engineer with five years of hands-on experience in designing, developing, and optimizing robust applications. Adept at leveraging a diverse skill set to deliver innovative solutions, I bring a proven track record of success in full-stack development, collaborative team leadership, and a commitment to staying at the forefront of evolving technologies. Eager to contribute my wealth of experience to dynamic projects and contribute to the continued success of forward-thinking teams.",
+    "designation": "Experienced Full-Stack Developer",
+    "description": "Results-driven software engineer with a five-year track record in designing, developing, and optimizing robust applications. Excels in development, collaborative team leadership, and staying at the forefront of evolving technologies. Eager to contribute a wealth of experience to dynamic projects and drive the success of forward-thinking teams.",
     "mail": "rups252504@gmail.com",
     "mobile": "8602382196",
     "location": "Bangalore, India",
     "img_url": "",
     "social": [
         {
-            "title": "linkedin.com/in/rupali-vaishnav",
+            "title": "LinkedIn",
             "icon": "linkedin",
             "link": "https://www.linkedin.com/in/rupali-vaishnav-b27b311a4/"
         },
         {
-            "title": "github.com/rupali",
+            "title": "GitHub",
             "icon": "github",
             "link": "https://github.com/Rupali2523"
         }
@@ -26,99 +26,103 @@
         "Bootstrap",
         "Typescript",
         "Web Development",
-        "UI/UX"
+        "UI/UX",
+        "Full-Stack Development",
+        "Responsive Design",
+        "RESTful APIs",
+        "Redux",
+        "Agile Methodologies",
+        "Git Version Control"
     ],
-    "education": [
-        {
-            "class": "M.Tech",
-            "institute": "Maulana Azad National Institute of Technology (MANIT) - Bhopal",
-            "duration": "07/2018 - 06/2020",
-            "location": "Bhopal"
-        },
-        {
-            "class": "B.E.",
-            "institute": "University Institute of Technology - RGPV - Bhopal",
-            "duration": "07/2011 - 06/2015",
-            "location": "Bhopal"
-        }
-    ],
-    "experience": [
-        {
-            "company": "CL Infotech Pvt. Ltd - (HASPR Client)",
-            "duration": "Duration - 06/2020 - 11/2023",
-            "designation": "Frontend Developer",
-            "location": "Bangalore"
-        },
-        {
-            "company": "TCS",
-            "duration": "Duration - 04/2016 - 04/2018",
-            "designation": "ASE - Assistant Software Engineer",
-            "location": "Mumbai"
-        }
-    ],
-    "projects": [
-        {
-            "title": "CL Infotech - HASPR Client",
-            "link": "",
-            "description": [
-                "As a Frontend Developer, I was an integral part of the team responsible for designing and developing the user interface and user experience for the Haspr website.",
-                "The project's focus was to create an intuitive, visually appealing, and responsive frontend that provided seamless navigation and engaging interactions to enhance user satisfaction.",
-                "Technology Stack: Assessed the project's requirements and selected appropriate frontend technologies. The stack included HTML5, CSS3, JavaScript (ES6+), and ReactJs, providing a modern and efficient development environment.",
-                "Component Development: Created reusable and modular UI components, utilizing React.js components and styled with CSS. This approach enhanced development efficiency, maintainability, and encouraged consistent design patterns throughout the website.",
-                "Frontend Optimization: Employed best practices to optimize website performance and loading speed. Minimized HTTP requests, utilized lazy loading for images, and optimized asset sizes to improve the overall user experience."
-            ]
-        },
-        {
-            "title": "Comment Module - React.js Project",
-            "link": "",
-            "description": [
-                "Led the development and implementation of a comprehensive comment module within a React.js application, enhancing code readability and maintainability.",
-                "Implemented industry best practices for code documentation, utilizing JavaScript comment syntax to provide clear explanations of complex logic, functions, and component structures.",
-                "Collaborated closely with the development team to ensure consistent and effective use of comments throughout the codebase, facilitating seamless teamwork and knowledge transfer.",
-                "Played a key role in code reviews, where the comment module received positive feedback for improving code comprehension and reducing onboarding time for new developers.",
-                "Actively maintained and updated the comment module to reflect changes in the codebase, ensuring that comments remained accurate and relevant.",
-                "The comment module significantly contributed to the overall project's success by enhancing collaboration, easing debugging efforts, and supporting future development and maintenance."
-            ]
-        },
-        {
-            "title": "Transactional Dashboard - React.js Project",
-            "link": "",
-            "description": [
-                "Spearheaded the development of a dynamic Transactional Dashboard using React.js, providing real-time insights into key business metrics.",
-                "Collaborated closely with cross-functional teams, including UX/UI designers and backend developers, to design and implement a responsive and user-friendly interface that met the specific needs of stakeholders.",
-                "Utilized React.js for building modular and reusable components, resulting in a scalable and maintainable codebase.",
-                "Integrated RESTful APIs to fetch and display transactional data, implementing asynchronous data fetching techniques to ensure optimal performance and responsiveness.",
-                "Implemented data visualization tools, such as charts and graphs, to present complex transactional data in an easily digestible format, enhancing decision-making for end-users.",
-                "Applied state management solutions, such as Redux, to manage the application's state and ensure a seamless user experience across various dashboard features.",
-                "Conducted thorough testing and debugging processes to identify and resolve issues, ensuring the reliability and accuracy of displayed transactional information.",
-                "Contributed to the project's success by meeting tight deadlines, actively participating in agile development methodologies, and providing valuable technical insights during team discussions.",
-                "The Transactional Dashboard received positive feedback from stakeholders for its intuitive design and the ability to provide actionable insights, contributing to improved business operations."
-            ]
-        },
-        {
-            "title": "UI Library Development - React.js Project",
-            "link": "",
-            "description": [
-                "Led the conceptualization, design, and development of a reusable UI library in React.js, streamlining the user interface development process across multiple projects.",
-                "Worked collaboratively with UX/UI designers to create a cohesive and consistent design system, ensuring a unified visual language and user experience across applications.",
-                "Implemented a range of customizable and responsive React components, enhancing code reusability and reducing development time for frontend teams.",
-                "Employed Storybook for component documentation, enabling seamless integration into various projects and empowering developers to quickly understand and implement UI elements.",
-                "Conducted usability testing and gathered feedback to iteratively enhance the UI library, resulting in improved user satisfaction and efficiency for development teams.",
-                "Integrated the UI library into existing projects, ensuring smooth adoption and adherence to established design guidelines.",
-                "Actively participated in code reviews, providing constructive feedback and ensuring the adherence to best practices and coding standards.",
-                "The UI library significantly improved development efficiency, reduced redundancy, and maintained a consistent user interface across the organization's suite of applications."
-            ]
-        },
-        {
-            "title": "TCS - CIBC",
-            "link": "",
-            "description": [
-                "As a Software Testing Specialist, I spearheaded the testing and quality assurance initiative for a complex banking application developed to provide a wide range of financial services to customers. The project's primary objective was to ensure the application's security, accuracy, and reliability while adhering to industry regulations and best practices.",
-                "Test Planning and Strategy: Formulated a comprehensive test strategy, considering the application's complexity and critical functionalities. Developed detailed test plans, encompassing functional, security, performance, and stress testing, to provide complete test coverage.",
-                "Test Data Management: Orchestrated the setup and management of test data, ensuring the availability of realistic scenarios for testing various banking operations while preserving data confidentiality.",
-                "The testing project significantly contributed to the success of the banking application by identifying and addressing critical issues and security vulnerabilities. The application achieved a high level of accuracy and reliability, ensuring seamless banking operations for customers. By meeting regulatory compliance requirements, the project enabled the bank to instill trust among its clients and maintain a strong reputation in the financial services industry.",
-                "The successful completion of the testing project played a crucial role in the application's smooth deployment, leading to enhanced customer satisfaction and business growth."
-            ]
-        }
-    ]
+    "education": {
+        "title": "Reward",
+        "icon": "social_leaderboard",
+        "data": [
+            {
+                "class": "M.Tech",
+                "institute": "Maulana Azad National Institute of Technology (MANIT) - Bhopal",
+                "duration": "07/2018 - 06/2020",
+                "location": "Bhopal"
+            },
+            {
+                "class": "B.E.",
+                "institute": "University Institute of Technology - RGPV - Bhopal",
+                "duration": "07/2011 - 06/2015",
+                "location": "Bhopal"
+            }
+        ]
+    },
+    "experience": {
+        "icon": "business_center",
+        "title": "EXPERIENCE",
+        "data": [
+            {
+                "company": "CL Infotech Pvt. Ltd - (HASPR Client)",
+                "duration": "06/2020 - 11/2023",
+                "designation": "Frontend Developer",
+                "location": "Bangalore",
+                "tech_stack": [
+                    "ReactJs",
+                    "Javascript",
+                    "Redux"
+                ],
+                "projects": [
+                    {
+                        "title": "CL Infotech - HASPR Client",
+                        "link": "",
+                        "description": [
+                            "Integral part of the team responsible for designing and developing the user interface and user experience for the Haspr website.",
+                            "Focused on creating an intuitive, visually appealing, and responsive frontend using HTML5, CSS3, JavaScript (ES6+), and ReactJs.",
+                            "Led the development of reusable and modular UI components, enhancing development efficiency, maintainability, and consistent design patterns.",
+                            "Implemented frontend optimization best practices to enhance website performance and loading speed, resulting in improved user satisfaction."
+                        ]
+                    },
+                    {
+                        "title": "Comment Module - React.js Project",
+                        "link": "",
+                        "description": [
+                            "Led the development and implementation of a comprehensive comment module within a React.js application, improving code readability and maintainability.",
+                            "Implemented industry best practices for code documentation using JavaScript comment syntax, facilitating seamless teamwork and knowledge transfer.",
+                            "Key contributor to code reviews, receiving positive feedback for improving code comprehension and reducing onboarding time for new developers."
+                        ]
+                    },
+                    {
+                        "title": "Transactional Dashboard - React.js Project",
+                        "link": "",
+                        "description": [
+                            "Spearheaded the development of a dynamic Transactional Dashboard using React.js, collaborating closely with cross-functional teams for a responsive and user-friendly interface.",
+                            "Utilized React.js for building modular and reusable components, integrated RESTful APIs, and implemented data visualization tools for actionable insights.",
+                            "Applied state management solutions, such as Redux, ensuring a seamless user experience and contributing to the project's success."
+                        ]
+                    },
+                    {
+                        "title": "UI Library Development - React.js Project",
+                        "link": "",
+                        "description": [
+                            "Led the conceptualization, design, and development of a reusable UI library in React.js, streamlining UI development across multiple projects.",
+                            "Collaborated with UX/UI designers to create a cohesive design system, implemented a range of customizable React components, and utilized Storybook for documentation.",
+                            "Conducted usability testing and gathered feedback, improving user satisfaction and development efficiency."
+                        ]
+                    }
+                ]
+            },
+            {
+                "company": "TCS",
+                "duration": "04/2016 - 04/2018",
+                "designation": "ASE - Assistant Software Engineer",
+                "location": "Mumbai",
+                "projects": [
+                    {
+                        "title": "TCS - CIBC",
+                        "link": "",
+                        "description": [
+                            "Spearheaded testing and quality assurance for a complex banking application, ensuring security, accuracy, and reliability.",
+                            "Formulated comprehensive test strategies, developed detailed test plans, and orchestrated test data management for various scenarios.",
+                            "Contributed to the successful deployment of the application, meeting regulatory compliance and enhancing customer satisfaction."
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
 }

@@ -88,8 +88,15 @@ export default function Resume({ download, path }) {
     return experience?.data?.map((el) => (
       <div key={el.link} className="eduction-container">
         <div className="company font-20 fw-800 margin-b-6">
-          <a href={el.link}>{el.company}</a>|
-          <span className="tech-stack">{returnTechStack(el.tech_stack)}</span>
+          <a href={el.link}>{el.company}</a>
+          {el.tech_stack && (
+            <>
+              |
+              <span className="tech-stack">
+                {returnTechStack(el.tech_stack)}
+              </span>
+            </>
+          )}
         </div>
         <div className="font-18 fw-600 margin-b-6">{el.designation}</div>
         <div className="font-14 primary fw-600 margin-b-6">{el.duration}</div>
