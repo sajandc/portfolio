@@ -29,6 +29,7 @@ export default function Resume({ download, path }) {
     experience = {},
     rewards = {},
     interests = {},
+    link = "",
   } = data;
 
   const returnSocial = () => {
@@ -50,8 +51,6 @@ export default function Resume({ download, path }) {
       </li>
     ));
   };
-
-
 
   const returnSkills = () => {
     return skills?.data?.map((el) => (
@@ -127,6 +126,8 @@ export default function Resume({ download, path }) {
     ));
   };
 
+  const domain = link ? new URL(link)?.hostname : "";
+
   return (
     <>
       <div className="resume-container">
@@ -134,7 +135,10 @@ export default function Resume({ download, path }) {
         <div className={`resume-inner-container ${download ? "download" : ""}`}>
           <div className="content-1">
             <div>
-              <img className="image" src={path === "sajan" ? SajanPhoto : RupaliPhoto} />
+              <img
+                className="image"
+                src={path === "sajan" ? SajanPhoto : RupaliPhoto}
+              />
             </div>
             <div>
               <h1>
@@ -143,13 +147,13 @@ export default function Resume({ download, path }) {
               </h1>
               <p className="designation primary fw-600">{designation}</p>
               <p className="designation primary fw-600">{duration}</p>
-              {download && (
+              {download && link && (
                 <a
                   className="portfolio-link primary"
                   target="_blank"
-                  href="https://sajan.co.in">
+                  href={link}>
                   <span class="material-symbols-outlined">captive_portal</span>
-                  sajan.co.in
+                  {domain}
                 </a>
               )}
               <p className="description fw-500 font-14">{description}</p>
