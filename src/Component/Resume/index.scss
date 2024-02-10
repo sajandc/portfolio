@@ -1,6 +1,14 @@
 $light: #459399;
 $dark: #313c4d;
 
+.lottie-loader {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .resume-container {
     margin-top: -126px;
     position: relative;

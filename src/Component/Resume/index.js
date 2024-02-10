@@ -7,11 +7,17 @@ import SajanPhoto from "../../assets/photo.JPG";
 import RupaliPhoto from "../../assets/rupali.jpg";
 import { callAPI } from "../../helper/commonFunction";
 import { RESUME } from "../../Constants/url";
+import Loader from "./Loader";
+
 export default function Resume({ download, path }) {
   const [data, setData] = useState({});
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
     callAPI({}, `${RESUME}?name=${path}`, "GET")
-      .then((res) => setData(res))
+      .then((res) => {
+        setData(res);
+        setLoading(false);
+      })
       .catch((error) => console.log("error", error));
   }, []);
 
@@ -128,7 +134,9 @@ export default function Resume({ download, path }) {
 
   const domain = link ? new URL(link)?.hostname : "";
 
-  return (
+  return loading ? (
+    <Loader />
+  ) : (
     <>
       <div className="resume-container">
         {!download && <NewHeader />}
