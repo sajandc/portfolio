@@ -166,7 +166,7 @@ export default function Bank() {
                 fontSize: "14px",
                 paddingBottom: "4px",
               }}>
-              <div>Your Account Statement as on Feb 16, 2024</div>
+              <div>Your Account Statement as on Feb 15, 2024</div>
               <div>Statement Period from Jan 01, 2024 to Nov 31, 2024</div>
             </div>
             <br />
