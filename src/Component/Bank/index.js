@@ -737,7 +737,7 @@ const header = (dataSet, currentBalance, renderTable, isLast, page) => (
       {isLast &&
         closingBalance(
           dataSet,
-          "2023-11-31",
+          "2023-11-30",
           "Closing Balance",
           currentBalance?.toFixed(2)
         )}
