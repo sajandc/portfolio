@@ -167,7 +167,7 @@ export default function Bank() {
                 paddingBottom: "4px",
               }}>
               <div>Your Account Statement as on Feb 15, 2024</div>
-              <div>Statement Period from Jun 01, 2024 to Nov 31, 2023</div>
+              <div>Statement Period from Jun 01, 2020 to Nov 31, 2023</div>
             </div>
             <br />
             <br />
