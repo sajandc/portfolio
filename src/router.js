@@ -9,6 +9,7 @@ import RupaliResume from "./Component/Resume/rupali";
 import Firojresume from "./Component/Resume/firoj";
 import { createHashRouter, RouterProvider } from "react-router-dom";
 import Loader from "./Component/Loader";
+import Bank from "./Component/Bank";
 
 export default function Router() {
   const router = createHashRouter([
@@ -51,6 +52,10 @@ export default function Router() {
     {
       path: "firoj",
       element: <Firojresume download />,
+    },
+    {
+      path: "bank",
+      element: <Bank />,
     },
   ]);
 
