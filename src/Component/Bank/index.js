@@ -137,7 +137,7 @@ export default function Bank() {
             </div>
             <div style={{ fontWeight: "700" }}>
               <div
-                style={{ borderTop: "1px solid #ff6632", paddingTop: "4px" }}>
+                style={{ borderTop: "1px solid #ff6632", paddingTop: "6px" }}>
                 MISS RUPALI VAISHNAV DO DEVIDAS VAISHNAV
               </div>
               <br />
@@ -166,8 +166,8 @@ export default function Bank() {
                 fontSize: "14px",
                 paddingBottom: "4px",
               }}>
-              <div>Your Account Statement as on Jan 31, 2024</div>
-              <div>Statement Period from Jan 01, 2024 to Jan 31, 2024</div>
+              <div>Your Account Statement as on Feb 16, 2024</div>
+              <div>Statement Period from Jan 01, 2024 to Nov 31, 2024</div>
             </div>
             <br />
             <br />
