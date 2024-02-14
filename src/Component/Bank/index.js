@@ -167,7 +167,7 @@ export default function Bank() {
                 paddingBottom: "4px",
               }}>
               <div>Your Account Statement as on Feb 15, 2024</div>
-              <div>Statement Period from Jun 01, 2020 to Nov 31, 2023</div>
+              <div>Statement Period from Jun 01, 2020 to Nov 30, 2023</div>
             </div>
             <br />
             <br />
@@ -182,7 +182,7 @@ export default function Bank() {
             paddingTop: "20px",
           }}>
           Statement of transactions in Savings Account {accountNumber} in INR
-          for the period Jun 01, 2020 - Nov 31, 2023
+          for the period Jun 01, 2020 - Nov 30, 2023
         </div>
         <br />
 
