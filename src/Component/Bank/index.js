@@ -85,7 +85,7 @@ export default function Bank() {
               textAlign: "right",
               fontSize: "14px",
             }}>
-            {el.debit || ""}
+            {el?.debit ? el?.debit?.toFixed(2) : ""}
           </p>
         </td>
 
@@ -101,7 +101,7 @@ export default function Bank() {
               textAlign: "right",
               fontSize: "14px",
             }}>
-            {el.credit || ""}
+            {el?.credit ? el?.credit?.toFixed(2) : ""}
           </p>
         </td>
         <td
@@ -118,7 +118,7 @@ export default function Bank() {
               marginRight: "10px",
               fontSize: "14px",
             }}>
-            {(+el.balance).toFixed(2)} Cr
+            {(+el.balance)?.toFixed(2)} Cr
           </p>
         </td>
       </tr>
@@ -739,7 +739,7 @@ const header = (dataSet, currentBalance, renderTable, isLast, page) => (
           dataSet,
           "2023-11-31",
           "Closing Balance",
-          currentBalance.toFixed(2)
+          currentBalance?.toFixed(2)
         )}
     </tbody>
   </table>
