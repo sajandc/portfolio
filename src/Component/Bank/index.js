@@ -3,24 +3,26 @@ import bank from "../../assets/bob.png";
 import Contact from "../../assets/contact.png";
 import Page from "./page";
 import { useSearchParams } from "react-router-dom";
-import moment from "moment"
+import moment from "moment";
 const accountNumber = 38880100000291;
 
 export default function Bank() {
-    const [ dataSet, setData ] = useState([])
-    
-      const [searchParams] = useSearchParams();
-      const page = +searchParams.get("page");
-      const size = +searchParams.get("size");
-    const isLast = !!+searchParams.get("last");
-    
+  const [dataSet, setData] = useState([]);
+  const [searchParams] = useSearchParams();
+  const page = +searchParams.get("page");
+  const from = +searchParams.get("from");
+  const size = +searchParams.get("size");
+  const isLast = !!+searchParams.get("last");
+
   useEffect(() => {
     document.body.style.background = "#fff";
     fetch(
       "https://script.google.com/macros/s/AKfycbyskSNx4_0eW0maKHJVR2wFnT9Tjy6dj_6KeitAvwyWcdD0w5Ns_r7N7CVY_nSEHwcqpg/exec"
     )
       .then((res) => res.json())
-      .then((res) => setData(res.splice(page, size)));
+      .then((res) => {
+        setData(res.splice(from, size));
+      });
   }, []);
 
   const renderTable = () => {
@@ -39,7 +41,7 @@ export default function Bank() {
               textAlign: "center",
               fontSize: "14px",
             }}>
-            {moment(el.date).format('YYYY-MM-DD')}
+            {moment(el.date).format("YYYY-MM-DD")}
           </p>
         </td>
         <td
@@ -184,7 +186,13 @@ export default function Bank() {
         </div>
         <br />
 
-        {header(dataSet, dataSet[dataSet.length - 1]?.balance, renderTable, isLast, page)}
+        {header(
+          dataSet,
+          dataSet[dataSet.length - 1]?.balance,
+          renderTable,
+          isLast,
+          page
+        )}
         <br />
         {isLast && (
           <>
