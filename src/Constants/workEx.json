@@ -1,11 +1,16 @@
 [
     {
-        "designation": "Senior Software Engineer",
+        "designation": "SDE3",
         "company": "@Happay (CRED)",
-        "duration": "April-2021 - Present"
+        "duration": "April-2024 - Present"
     },
     {
-        "designation": "Frontend Developer",
+        "designation": "Senior Software Engineer",
+        "company": "@Happay (CRED)",
+        "duration": "April-2021 - March-2024"
+    },
+    {
+        "designation": "Software Engineer",
         "company": "@Happay",
         "duration": "Jan-2020 - Mar-2021"
     },

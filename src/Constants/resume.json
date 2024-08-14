@@ -1,6 +1,6 @@
 {
     "name": "Sajan Chouhan",
-    "designation": "SDE2 @happay (CRED)",
+    "designation": "SDE3 @happay (CRED)",
     "description": "Passionate Frontend Developer with 5+ years of experience in crafting visually stunning and seamless digital experiences using ReactJs, HTML, CSS, and JavaScript. Eager to contribute my expertise and commitment to excellence to elevate your team and shape the future of frontend development.",
     "mail": "sajan.d.chouhan@gmail.com",
     "mobile": "8319642003",
@@ -44,7 +44,7 @@
                 "company": "HAPPAY (CRED)",
                 "link": "https://happay.com/",
                 "duration": "Jan, 2019 - Present",
-                "designation": "Senior Software Engineer",
+                "designation": "SDE III",
                 "tech_stack": [
                     "ReactJs",
                     "Javascript",
@@ -58,7 +58,7 @@
                         "icon": "terminal",
                         "link": "https://epic.happay.in",
                         "description": [
-                            "Led the development of an innovative payment solution within a Progressive Web App (PWA) and Responsive Web Design (RWD) framework, using React and Redux.",
+                            "Led the development of an innovative B2B payment solution within a Progressive Web App (PWA) and Responsive Web Design (RWD) framework, using React and Redux.",
                             "Engineered a seamless and responsive payment experience for diverse devices, demonstrating expertise in driving technological advancements and user-centric solutions."
                         ]
                     },

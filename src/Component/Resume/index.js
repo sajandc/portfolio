@@ -8,12 +8,14 @@ import RupaliPhoto from "../../assets/rupali.jpg";
 import { callAPI } from "../../helper/commonFunction";
 import { RESUME } from "../../Constants/url";
 import Loader from "./Loader";
-
-export default function Resume({ download, path }) {
+import { useParams } from "react-router-dom";
+export default function Resume({}) {
+  const { name, type } = useParams();
+  const download = type === "download";
   const [data, setData] = useState({});
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    callAPI({}, `${RESUME}?name=${path}`, "GET")
+    callAPI({}, `${RESUME}?name=${name}`, "GET")
       .then((res) => {
         setData(res);
         setLoading(false);
@@ -22,11 +24,11 @@ export default function Resume({ download, path }) {
   }, []);
 
   const {
-    name = "",
+    name: n = "",
     description = "",
     mail = "",
     mobile = "",
-    location = "",
+    location: lc = "",
     designation = "",
     social = [],
     education = {},
@@ -152,13 +154,13 @@ export default function Resume({ download, path }) {
             <div>
               <img
                 className="image"
-                src={path === "sajan" ? SajanPhoto : RupaliPhoto}
+                src={name === "sajan" ? SajanPhoto : RupaliPhoto}
               />
             </div>
             <div>
               <h1>
-                <span className="fw-500">{name.split(" ")[0]} </span>
-                <span className="fw-800">{name.split(" ")[1]}</span>
+                <span className="fw-500">{n.split(" ")[0]} </span>
+                <span className="fw-800">{n.split(" ")[1]}</span>
               </h1>
               <p className="designation primary fw-600">{designation}</p>
               <p className="designation primary fw-600">{duration}</p>
@@ -191,7 +193,7 @@ export default function Resume({ download, path }) {
                     target="_blank"
                     href="https://goo.gl/maps/PaCqoCedaxZT2hR1A">
                     <span class="material-symbols-outlined">location_on</span>
-                    {location}
+                    {lc}
                   </a>
                 </li>
                 {returnSocial()}
@@ -222,7 +224,7 @@ export default function Resume({ download, path }) {
           </div>
         </div>
         {!download && (
-          <a href={`./${path}_resume.pdf`} className="download-resume" download>
+          <a href={`./${name}_resume.pdf`} className="download-resume" download>
             <div>Download</div>
             <span class="material-symbols-outlined">download</span>
           </a>
