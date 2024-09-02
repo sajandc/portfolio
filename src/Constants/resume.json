@@ -1,41 +1,69 @@
 {
     "name": "Sajan Chouhan",
     "designation": "SDE3 @happay (CRED)",
-    "description": "Passionate Frontend Developer with 5+ years of experience in crafting visually stunning and seamless digital experiences using ReactJs, HTML, CSS, and JavaScript. Eager to contribute my expertise and commitment to excellence to elevate your team and shape the future of frontend development.",
-    "mail": "sajan.d.chouhan@gmail.com",
-    "mobile": "8319642003",
-    "location": "Bangalore, India",
+    "description": "Passionate Frontend Developer with 5+ years of experience in crafting visually stunning and seamless digital experiences.",
     "link": "https://sajan.co.in",
-    "img_url": "",
+    "mail": "sajan.d.chouhan@gmail.com",
+    "mobile": 8319642003,
+    "location": "Bangalore, India",
     "social": [
         {
-            "title": "linkedin.com/in/sajandchouhan",
-            "icon": "linkedin",
+            "text": "sajandchouhan",
+            "title": "Linkedin",
             "link": "https://www.linkedin.com/in/sajandchouhan/"
         },
         {
-            "title": "github.com/sajandc",
-            "icon": "github",
+            "text": "sajandc",
+            "title": "Github",
             "link": "https://github.com/sajandc"
         }
     ],
-    "skills": {
-        "title": "SKILLS",
-        "icon": "psychology",
-        "data": [
-            "ReactJs - Advanced proficiency",
-            "Javascript - proficient",
-            "CSS3/SCSS - Extensive experience",
-            "Micro Frontend",
-            "Design System",
-            "Mobile Web Development",
-            "PWA",
-            "App Script",
-            "Redux",
-            "RWD",
-            "HTML5"
-        ]
-    },
+    "skills": [
+        {
+            "Frontend Development": [
+                {
+                    "title": "ReactJs",
+                    "description": "Advanced proficiency in building dynamic, responsive web applications."
+                },
+                {
+                    "title": "JavaScript",
+                    "description": "Proficient in writing clean, maintainable, and efficient code."
+                },
+                {
+                    "title": "HTML5 & CSS3/SCSS",
+                    "description": "Strong foundation in modern web standards and crafting visually appealing designs."
+                },
+                {
+                    "title": "GraphQL & Redux",
+                    "description": "Skilled in managing application state and data with efficient fetching and API interactions."
+                }
+            ]
+        },
+        {
+            "Architecture & Design": [
+                {
+                    "title": "Micro Frontend & Design Systems",
+                    "description": "Expertise in developing scalable architectures and maintaining consistent UI/UX across applications."
+                },
+                {
+                    "title": "Progressive Web Apps (PWA) & Responsive Web Design (RWD)",
+                    "description": "Experienced in building reliable, fast, and engaging applications optimized for all devices."
+                }
+            ]
+        },
+        {
+            "Mobile & Automation": [
+                {
+                    "title": "Mobile Web Development",
+                    "description": "Skilled in optimizing web applications for mobile devices."
+                },
+                {
+                    "title": "App Script",
+                    "description": "Competent in automating workflows and extending functionality."
+                }
+            ]
+        }
+    ],
     "experience": {
         "icon": "business_center",
         "title": "EXPERIENCE",
@@ -45,21 +73,27 @@
                 "link": "https://happay.com/",
                 "duration": "Jan, 2019 - Present",
                 "designation": "SDE III",
+                "description": [
+                    "Spearheaded the development of multiple key products at Happay, with a focus on crafting seamless, responsive, and user-centric digital experiences.",
+                    "Led and contributed to the end-to-end development of several platforms using ReactJs, Redux, and JavaScript, emphasizing Progressive Web Apps (PWA) and Responsive Web Design (RWD).",
+                    "Collaborated closely with cross-functional teams to deliver innovative solutions, ensuring cross-platform compatibility and maintaining a high standard of user experience.",
+                    "Integrated GraphQL to optimize data fetching, reducing latency and improving application performance across various products."
+                ],
                 "tech_stack": [
                     "ReactJs",
                     "Javascript",
                     "Redux",
                     "PWA",
-                    "PWA"
+                    "RWD"
                 ],
                 "projects": [
                     {
-                        "title": "EPIC - Platform",
+                        "title": "BBPS B2B Payments Platform (Delight - Platform)",
                         "icon": "terminal",
                         "link": "https://epic.happay.in",
                         "description": [
-                            "Led the development of an innovative B2B payment solution within a Progressive Web App (PWA) and Responsive Web Design (RWD) framework, using React and Redux.",
-                            "Engineered a seamless and responsive payment experience for diverse devices, demonstrating expertise in driving technological advancements and user-centric solutions."
+                            "Developed in collaboration with Bharat Connect and NPCI, this platform was showcased at the Global Fintech Fest (GFF)",
+                            "Created a responsive payment solution using ReactJs and Redux within a PWA and RWD framework."
                         ]
                     },
                     {
@@ -85,7 +119,7 @@
                         "icon": "terminal",
                         "link": "https://cards.happay.in",
                         "description": [
-                            "Spearheaded the development of a comprehensive product with diverse responsive components. Mastery of ReactJs, Redux, and React Router resulted in a seamlessly integrated and highly responsive product.",
+                            "Spearheaded the development of a comprehensive B2B Cards product with diverse responsive components. Mastery of ReactJs, Redux, and React Router resulted in a seamlessly integrated and highly responsive product.",
                             "Active involvement in optimizing user experience across various devices, emphasizing adaptability and user-centric design."
                         ]
                     },
@@ -104,7 +138,8 @@
                         "link": "https://admin.happay.in/analytics",
                         "description": [
                             "Conceived, developed, and maintained a sophisticated analytics product. Proficient in crafting custom configurations for charts and tables, reflecting a dedication to delivering impactful and user-friendly applications.",
-                            "Hands-on experience underscores proficiency in analytics tool development and autonomous delivery of end-to-end solutions."
+                            "Hands-on experience underscores proficiency in analytics tool development and autonomous delivery of end-to-end solutions.",
+                            "Utilized GraphQL to efficiently fetch and manage large datasets, enabling real-time data visualization and interaction."
                         ]
                     },
                     {
@@ -130,28 +165,28 @@
         ]
     },
     "education": {
-        "title": "Reward",
-        "icon": "social_leaderboard",
+        "title": "EDUCATION",
+        "icon": "school",
         "data": [
             {
-                "class": "M.Tech",
-                "institute": "Indian Institute of Information Technology - Allahabad",
-                "duration": "01 July, 2016 - 01 August, 2018",
+                "class": "Master of Technology",
+                "institute": "Indian Institute of Information Technology - (IIIT)",
+                "duration": "July, 2016 - August, 2018",
                 "branch": "Information Technology",
                 "marks": "CGPA - 8.6",
                 "location": "Allahabad"
             },
             {
-                "class": "B.E.",
+                "class": "Bachelor of Engineering",
                 "institute": "University Institute of Technology - RGPV",
-                "duration": "01 June, 2011 - 01 June, 2015",
+                "duration": "June, 2011 - June, 2015",
                 "branch": "Computer Science",
                 "location": "Bhopal"
             }
         ]
     },
     "rewards": {
-        "title": "Reward",
+        "title": "REWARDS",
         "icon": "social_leaderboard",
         "data": [
             {
@@ -160,14 +195,15 @@
             }
         ]
     },
-    "interest": {
-        "title": "Interests",
+    "interests": {
+        "title": "INTERESTS",
         "icon": "sprint",
         "data": [
             "Artificial Intelligent",
             "Travelling",
             "Bike Riding",
-            "Painting"
+            "Painting",
+            "Intercultural Exchange"
         ]
     }
 }

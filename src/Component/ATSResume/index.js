@@ -167,7 +167,7 @@ export default function ATSResume({}) {
           }`}>
           {/* HEADING */}
           <div className="ats-resume-heading border-b padding-b-24">
-            <div>
+            <div style={{ width: "70%" }}>
               <div className="flex-vertical-center fw-800 font-30">
                 {n}{" "}
                 {!download && (
@@ -234,10 +234,14 @@ export default function ATSResume({}) {
           </div>
 
           {/* REWARDS */}
-          <div className="education border-b margin-t-24 padding-b-24">
-            <div className="flex-horizontal-center fw-600 font-20">REWARDS</div>
-            {returnRewards()}
-          </div>
+          {rewards.data && (
+            <div className="education border-b margin-t-24 padding-b-24">
+              <div className="flex-horizontal-center fw-600 font-20">
+                REWARDS
+              </div>
+              {returnRewards()}
+            </div>
+          )}
 
           {/* PROJECTS */}
           <div className="education margin-t-24">

@@ -2,56 +2,76 @@
     "name": "Rupali Vaishnav",
     "designation": "Experienced Full-Stack Developer",
     "description": "Results-driven software engineer with a five-year track record in designing, developing, and optimizing robust applications. Excels in development, collaborative team leadership, and staying at the forefront of evolving technologies. Eager to contribute a wealth of experience to dynamic projects and drive the success of forward-thinking teams.",
+    "link": "",
     "mail": "rups252504@gmail.com",
     "mobile": "8602382196",
     "location": "Bangalore, India",
-    "img_url": "",
     "social": [
         {
+            "text": "rupali-vaishnav-b27b311a4",
             "title": "LinkedIn",
-            "icon": "linkedin",
             "link": "https://www.linkedin.com/in/rupali-vaishnav-b27b311a4/"
         },
         {
+            "text": "Rupali2523",
             "title": "GitHub",
-            "icon": "github",
             "link": "https://github.com/Rupali2523"
         }
     ],
     "skills": [
-        "ReactJS",
-        "Javascript",
-        "CSS",
-        "HTML",
-        "Bootstrap",
-        "Typescript",
-        "Web Development",
-        "UI/UX",
-        "Full-Stack Development",
-        "Responsive Design",
-        "RESTful APIs",
-        "Redux",
-        "Agile Methodologies",
-        "Git Version Control"
+        {
+            "Frontend Development": [
+                {
+                    "title": "ReactJS",
+                    "description": "Advanced proficiency in building dynamic, responsive web applications."
+                },
+                {
+                    "title": "JavaScript",
+                    "description": "Proficient in writing clean, maintainable, and efficient code."
+                },
+                {
+                    "title": "HTML5 & CSS3",
+                    "description": "Strong foundation in modern web standards and crafting visually appealing designs."
+                },
+                {
+                    "title": "Bootstrap",
+                    "description": "Experienced in utilizing frameworks to expedite and standardize development."
+                },
+                {
+                    "title": "TypeScript",
+                    "description": "Skilled in adding type safety to JavaScript, enhancing code quality and maintainability."
+                }
+            ]
+        },
+        {
+            "Full-Stack Development": [
+                {
+                    "title": "UI/UX Design",
+                    "description": "Expertise in creating intuitive and user-centric designs."
+                },
+                {
+                    "title": "Responsive Design",
+                    "description": "Experience in developing applications that work seamlessly across various devices and screen sizes."
+                },
+                {
+                    "title": "RESTful APIs",
+                    "description": "Skilled in integrating and developing RESTful services for robust data exchange."
+                },
+                {
+                    "title": "Redux",
+                    "description": "Proficient in managing application state effectively."
+                },
+                {
+                    "title": "Agile Methodologies",
+                    "description": "Experience in iterative development processes for continuous improvement."
+                },
+                {
+                    "title": "Git Version Control",
+                    "description": "Experienced in using version control for efficient code management and collaboration."
+                }
+            ]
+        }
     ],
-    "education": {
-        "title": "Reward",
-        "icon": "social_leaderboard",
-        "data": [
-            {
-                "class": "M.Tech",
-                "institute": "Maulana Azad National Institute of Technology (MANIT) - Bhopal",
-                "duration": "07/2018 - 06/2020",
-                "location": "Bhopal"
-            },
-            {
-                "class": "B.E.",
-                "institute": "University Institute of Technology - RGPV - Bhopal",
-                "duration": "07/2011 - 06/2015",
-                "location": "Bhopal"
-            }
-        ]
-    },
     "experience": {
         "icon": "business_center",
         "title": "EXPERIENCE",
@@ -61,6 +81,7 @@
                 "duration": "06/2020 - 11/2023",
                 "designation": "Frontend Developer",
                 "location": "Bangalore",
+                "description": "At CL Infotech, I played a key role in designing and developing user interfaces and experiences for diverse projects, focusing on delivering intuitive and high-performance applications. My responsibilities included leading the development of reusable UI components, optimizing frontend performance, and ensuring responsive design across platforms.",
                 "tech_stack": [
                     "ReactJs",
                     "Javascript",
@@ -111,6 +132,7 @@
                 "duration": "04/2016 - 04/2018",
                 "designation": "ASE - Assistant Software Engineer",
                 "location": "Mumbai",
+                "description": "At TCS, I contributed to the development and quality assurance of banking applications, focusing on ensuring security, accuracy, and compliance. My role involved formulating test strategies, managing test data, and leading testing efforts to ensure the successful deployment of complex applications.",
                 "projects": [
                     {
                         "title": "TCS - CIBC",
@@ -122,7 +144,81 @@
                         ]
                     }
                 ]
+            },
+            {
+                "company": "Test Yantra - (Client - Tekion Pvt Ltd)",
+                "duration": "02/2024 - 09/2024",
+                "designation": "Senior Software Engineer",
+                "location": "Bangalore",
+                "description": "In my role at Test Yantra, I worked on enhancing and developing features for Tekion's financial management platforms. My focus was on creating highly interactive and user-friendly interfaces for accounting and payroll systems, contributing to both backend and frontend development efforts.",
+                "tech_stack": [
+                    "ReactJs",
+                    "Javascript",
+                    "Redux"
+                ],
+                "projects": [
+                    {
+                        "title": "Tekion Accounting",
+                        "link": "",
+                        "description": [
+                            "As a frontend developer, I also worked on Tekion Accounting, an accounting management platform, utilizing React and JavaScript. My contributions were centered on creating a seamless and highly interactive user experience.",
+                            "Accounts Receivable Invoice: Designed the UI for managing customer invoices and tracking payment statuses.",
+                            "Accounts Payable Invoice: Developed interfaces to handle vendor invoices and streamline the payment process.",
+                            "Payments Processing: Worked on the payment management screens to facilitate smooth transaction flows and reconciliation. This project aimed to simplify financial management tasks while providing a modern and efficient interface for accountants and financial managers."
+                        ]
+                    },
+                    {
+                        "title": "Tekion Payrole",
+                        "link": "",
+                        "description": [
+                            "I contributed as a frontend developer on Tekion Payroll, a comprehensive payroll management system. The application was built using React and JavaScript, focusing on a smooth and responsive user interface.",
+                            "Login/Logout Functionality: Implemented secure authentication mechanisms for employees and administrators.",
+                            "Time Management Module: Built an intuitive interface for tracking working hours, breaks, and overtime.",
+                            "Employee Sheets: Developed dynamic forms and data tables for managing employee information, including work hours and salary data.",
+                            "Employee Hours Tracking: Created a real-time hour tracking system to ensure payroll accuracy. The project was aimed at enhancing payroll operations while ensuring a user-friendly experience for both employees and administrators."
+                        ]
+                    }
+                ]
             }
+        ]
+    },
+    "education": {
+        "title": "EDUCATION",
+        "icon": "school",
+        "data": [
+            {
+                "class": "M.Tech",
+                "institute": "Maulana Azad National Institute of Technology (MANIT) - Bhopal",
+                "duration": "07/2018 - 06/2020",
+                "location": "Bhopal"
+            },
+            {
+                "class": "B.E.",
+                "institute": "University Institute of Technology - RGPV - Bhopal",
+                "duration": "07/2011 - 06/2015",
+                "location": "Bhopal"
+            }
+        ]
+    },
+    "rewards": {
+        "title": "REWARDS",
+        "icon": "social_leaderboard",
+        "data": [
+            {
+                "title": "Talent Density Pitstop (TDP) Program Recognition",
+                "description": "Recognized as a top talent in the TDP program for consistently surpassing expectations and making substantial contributions to team success, showcasing exceptional skills and dedication."
+            }
+        ]
+    },
+    "interests": {
+        "title": "INTERESTS",
+        "icon": "sprint",
+        "data": [
+            "Artificial Intelligence",
+            "Travelling",
+            "Bike Riding",
+            "Painting",
+            "Intercultural Exchange"
         ]
     }
 }
