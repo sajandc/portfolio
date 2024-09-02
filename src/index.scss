@@ -5,6 +5,8 @@
   --text-color-dark: #242022;
   --button-text-color: #fff;
   --font-family: "Alexandria", sans-serif;
+  --secondary-color: #459399;
+  --primary-color: #313c4d;
 }
 
 html {
@@ -27,4 +29,116 @@ body {
 .material-symbols-outlined {
   cursor: pointer;
   transition: all ease-in 0.2s;
+}
+
+// VARIABLES
+
+$font: 12, 14, 16, 18, 20, 22, 24, 26, 28, 30;
+$margin: 4, 5, 6, 8, 10, 12, 14, 16, 18, 20, 24, 30, 35, 40;
+
+// CUSTOMSCSS
+
+@each $size in $font {
+  .font-#{$size} {
+    font-size: #{$size}px;
+  }
+}
+
+// MARGIN
+
+@each $size in $margin {
+  .margin-#{$size} {
+    margin: #{$size}px;
+  }
+}
+
+@each $size in $margin {
+  .margin-b-#{$size} {
+    margin-bottom: #{$size}px;
+  }
+}
+
+@each $size in $margin {
+  .margin-t-#{$size} {
+    margin-top: #{$size}px;
+  }
+}
+
+@each $size in $margin {
+  .margin-l-#{$size} {
+    margin-left: #{$size}px;
+  }
+}
+
+@each $size in $margin {
+  .margin-r-#{$size} {
+    margin-right: #{$size}px;
+  }
+}
+
+// PADDING
+
+@each $size in $margin {
+  .padding-#{$size} {
+    padding: #{$size}px;
+  }
+}
+
+@each $size in $margin {
+  .padding-b-#{$size} {
+    padding-bottom: #{$size}px;
+  }
+}
+
+@each $size in $margin {
+  .padding-t-#{$size} {
+    padding-top: #{$size}px;
+  }
+}
+
+@each $size in $margin {
+  .padding-l-#{$size} {
+    padding-left: #{$size}px;
+  }
+}
+
+@each $size in $margin {
+  .padding-r-#{$size} {
+    padding-right: #{$size}px;
+  }
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.no-underline {
+  text-decoration: unset;
+}
+
+.primary-color {
+  color: var(--primary-color);
+}
+
+.border-b {
+  border-bottom: 1px solid var(--primary-color);
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-vertical-center {
+  display: flex;
+  align-items: center;
+}
+
+.flex-horizontal-center {
+  display: flex;
+  justify-content: center;
+}
+
+.space-between {
+  display: flex;
+  justify-content: space-between;
 }

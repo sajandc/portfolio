@@ -7,7 +7,7 @@ import SajanPhoto from "../../assets/photo.JPG";
 import RupaliPhoto from "../../assets/rupali.jpg";
 import { callAPI } from "../../helper/commonFunction";
 import { RESUME } from "../../Constants/url";
-import Loader from "./Loader";
+import Loader from "../CircularLoader";
 import { useParams } from "react-router-dom";
 export default function Resume({}) {
   const { name, type } = useParams();

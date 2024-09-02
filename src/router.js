@@ -5,6 +5,7 @@ import About from "./Component/About";
 import Contact from "./Component/Contact";
 import Projects from "./Component/Projects";
 import Resume from "./Component/Resume";
+import ATSResume from "./Component/ATSResume";
 import { Routes, Route } from "react-router-dom";
 import CustomRouter from "./customRouter";
 import Loader from "./Component/Loader";
@@ -24,6 +25,7 @@ export default function Router() {
           <Route path="projects" element={<Projects />} />
           <Route path="contacts" element={<Contact />} />
           <Route path="resume/:name?/:type?" element={<Resume />} />
+          <Route path="ats-resume/:name?/:type?" element={<ATSResume />} />
         </Routes>
       </CustomRouter>
     </>
